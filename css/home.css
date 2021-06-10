@@ -1,6 +1,72 @@
-body {
-    background-color: white;
+* {
+    
+    box-sizing: border-box;
+
+}
+
+#slogan {
+    text-align: center;
+    width: 100%;
+    display: block;
+    background-image: url(../assets/hero.jpg);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    padding-top: 300px;
+    background-blend-mode:screen;
+
+}
+
+#slogan h1 {
+
+    font-size: 60px;
 }
 
 
+#slogan h2 {
+    font-size: 80px;
+    color:white ;
 
+}
+
+#slogan section {
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+}
+
+#slogan h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color:white ;
+    padding: 20px;
+
+}
+
+#slogan button {
+    width: 200px;
+    font-size: 30px;
+    color: white;
+    background-color: #E35046;
+    border-radius: 15px;
+    border-style: none;
+    padding:5px;
+    
+}
+
+#slogan button:hover {
+    cursor: pointer;
+}
+
+#slogan button a {
+    text-decoration: none;
+    color: white;
+}
+
+#slogan div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}

@@ -1,0 +1,54 @@
+/* #firstImage {
+    display: inline-block;
+
+}
+
+#firstText {
+    display: inline-block;
+}
+
+
+
+
+#secondImage {
+    display: inline-block;
+}
+
+#secondText {
+    display: inline-block;
+}
+
+#thirdImage {
+    display: inline-flex;
+}
+
+
+#thirdText {
+    display: inline-block;
+}
+body {
+    background-color : #FCEBEA;
+}
+
+#headline {
+    color: red;
+    text-align: center;
+} */
+
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    width: 100%;
+    text-align: center;
+}
+
+.firstArticle img {
+float: right;
+/* display: inline; */
+}
+body {
+    background-color: rosybrown;
+}

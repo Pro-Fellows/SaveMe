@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+footer{
+    background-color: #E35046;
+    height: 100px;
+    font-family:'Bebas Neue', cursive;
+    color:  #FCEBEA;
+   
+}
+#copyRights{
+   float: left;
+   font-size: 25px;
+   margin: 35px 0px 20px 40px;
+
+}
+
+#footerIcon{
+    float: right;
+    margin: 35px 40px 20px 0px;
+
+
+}
+
+#icons{
+    float: left;  
+    margin-right: 30px;
+    margin-top: -15px;
+      
+}
+
+#patreon{
+    float: right;
+    font-size: 25px; 
+   
+}
+
+
+#icons a img {
+margin-left: 10px;
+margin-top: -6px;
+}
+
+#patreon p a {
+    text-decoration: none;
+}

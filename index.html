@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/help.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
 
+
 </head>
 
 <body>
+
     <header>
 
         <img id="logo" src="logo.jpg" alt="">
@@ -28,6 +31,7 @@
     </header>
 
     <main>
+
 
      <div id="slogan">
         <div>
@@ -117,12 +121,49 @@
       
     </div>
 
+
+    <div></div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="img/Blood-Donors.jpg" style="width:100%">
+          <div class="text">Happy to get blood</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="img/Blood-Donor.jpg" style="width:100%">
+          <div class="text">Happy to donate blood</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="img/teamwork.jpg" style="width:100%">
+          <div class="text">Save Me - Team</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="img/Save-A-Life.jpg" style="width:100%">
+          <div class="text" style="color: black;">Save a life</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    <div></div>
+      
     </main>
 
     <footer>
 
     </footer>
 
+
+    <script src="js/slider.js"></script>
 
 </body>
 </html>

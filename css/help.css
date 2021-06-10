@@ -1,45 +1,9 @@
-/* #firstImage {
-    display: inline-block;
-
-}
-
-#firstText {
-    display: inline-block;
-}
-
-
-
-
-#secondImage {
-    display: inline-block;
-}
-
-#secondText {
-    display: inline-block;
-}
-
-#thirdImage {
-    display: inline-flex;
-}
-
-
-#thirdText {
-    display: inline-block;
-}
-
-
-#headline {
-    color: red;
-    text-align: center;
-} */
-
-
 * {
     box-sizing: border-box;
 }
 
 
-#headline {
+.headline {
     font-size: 50px;
     text-align: center;
     margin: 30px;
@@ -78,3 +42,15 @@
 }
 
 
+
+#partenrs {
+
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around ;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}

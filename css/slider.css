@@ -4,9 +4,10 @@
 .slideshow-container img {
   vertical-align: middle;
   height: 600px;
+  
 }
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1200px;
   position: relative;
   margin: auto;
 }

@@ -50,10 +50,13 @@
 
 }
 
-.column {
-    width: 60px;
-}
 
 #artCont {
     width: 100%;
+}
+
+#heartBeat {
+
+   position: relative;
+   top: 50px;
 }

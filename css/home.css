@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
     
     box-sizing: border-box;
@@ -9,10 +11,11 @@
     width: 100%;
     display: block;
     background-image: url(../assets/hero.jpg);
-    height: 600px;
-    background-position: center;
-    background-size: cover;
-    background-attachment: scroll;
+    height: 850px;
+    background-position:top;
+    background-size:cover;
+    /* transform: translate(10px,-20px); */
+    background-attachment:fixed;
     padding-top: 300px;
     background-blend-mode:screen;
 
@@ -20,32 +23,31 @@
 
 #slogan h1 {
 
-    font-size: 60px;
-}
-
-
-#slogan h2 {
-    font-size: 80px;
-    color:white ;
+    font-size: 70px;
+    color: white;
+    font-family:'Bebas Neue', serif;
+    
 
 }
+
 
 #slogan section {
     display: inline-block;
     position: relative;
-    margin-top: 20px;
+    margin-top: 180px;
 }
 
 #slogan h3 {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 35px;
     color:white ;
-    padding: 20px;
+    padding: 40px;
+    font-family:'Bebas Neue', serif;
 
 }
 
 #slogan button {
-    width: 200px;
+    width: 250px;
+    height: 60px;
     font-size: 30px;
     color: white;
     background-color: #E35046;
@@ -69,4 +71,14 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+}
+
+.divv {
+
+    margin-top: 60px;
+
+}
+
+#slogan {
+    margin-top: 0;
 }

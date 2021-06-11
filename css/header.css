@@ -2,15 +2,14 @@
 
 
 header {
-    background-color : #E35046;
-    height: 150px;
+    height: 0px;
     font-size: 32px;
    
 
 }
 #logo{
     background-color : #E35046;
-    height: 150px;
+    height: 110px;
     width: 150px;
    
 }
@@ -18,24 +17,33 @@ header {
 ul{
     background-color : #E35046;
     list-style-type: none;
-    margin-top: -100px;
+    margin-top: -80px;
     margin-left: 130px;
 }
+
+#joinUs{
+
+    margin-left: 400px;
+
+}
+
 li{
     display: inline-block;
 }
 li a{
    font-family:'Bebas Neue', cursive;
-   color: #FCEBEA;
+   color: white;
+   font-size: 40px;
    text-align: center;
    padding: 14px 25px;
    text-decoration: none;
    margin-left: 30px;
-   padding-top: 57px;
-   padding-bottom: 57px;
+   padding-top: 10px;
+   padding-bottom: 10px;
    
 }
 li a:hover{
-    color: #E35046 ;
-    background-color: #FCEBEA;
+    color: white ;
+    background-color: #E35046;
+    border-radius: 20px;
 }

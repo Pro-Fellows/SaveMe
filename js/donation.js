@@ -21,7 +21,7 @@ function Donation(name,age,gender,weight,city,address,bloodType,avail1,avail2,ph
 
 }
 
-grabDonors();
+Donation.array = grabDonors();
 
 
 formElement.addEventListener('submit', submitHandling); // this is the form submit handling event.
@@ -46,11 +46,6 @@ function submitHandling(event){
   // Put Ghadder's work here to compare and add #times
 
 }
-
-
-
-
-
 
 
 

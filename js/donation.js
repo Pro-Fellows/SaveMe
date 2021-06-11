@@ -4,7 +4,7 @@ let formElement = document.getElementById('formID'); // Add the
 
 Donation.array = [];
 
-function Donation(name,age,gender,weight,city,address,bloodType,avail,phone,anonymous){ // Don't forget to change the variables as the form
+function Donation(name,age,gender,weight,city,address,bloodType,avail1,avail2,phone){ // Don't forget to change the variables as the form
 
   this.name = name;
   this.age = age;
@@ -13,9 +13,9 @@ function Donation(name,age,gender,weight,city,address,bloodType,avail,phone,anon
   this.city = city;
   this.address = address;
   this.bloodType = bloodType;
-  this.avail = avail;
+  this.avail1 = avail1;
+  this.avail2 = avail2;
   this.phone = phone;
-  this.anony = anonymous;
 
   Donation.array.push(this);
 
@@ -24,19 +24,28 @@ function Donation(name,age,gender,weight,city,address,bloodType,avail,phone,anon
 grabDonors();
 
 
-// formElement.addEventListener('submit', submitHandling); // this is the form submit handling event.
+formElement.addEventListener('submit', submitHandling); // this is the form submit handling event.
 
 function submitHandling(event){
-//   event.preventDefault();
+  event.preventDefault();
+  console.log(event);
+  let name = event.target.fname.value;
+  let age = event.target.age.value;
+  let gender = event.target.gender.value;
+  let weight = event.target.weight.value;
+  let city = event.target.city.value;
+  let address = event.target.address.value;
+  let bloodType = event.target.bloodType.value;
+  let avail1 = event.target.availability1.value;
+  let avail2 = event.target.availability1.value;
+  let mobile = event.target.mobileNumber.value;
 
-  new Donation('osaid',23,'male',72,'Maan','engineers st/ building#9','O+','thur-sat','0777437637',true); // add here the values from the forms in order to creat a new instance.
+  new Donation(name,age,gender,weight,city,address,bloodType,avail1,avail2,mobile); // add here the values from the forms in order to creat a new instance.
 
   storeDonors();
   // Put Ghadder's work here to compare and add #times
 
 }
-
-submitHandling();
 
 
 

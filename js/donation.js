@@ -1,39 +1,42 @@
 'use strict';
 
-let formElement = document.getElementById('');
+let formElement = document.getElementById('formID'); // Add the
 
-let Donation.array = [];
+Donation.array = [];
 
-let Donation = function(name,age,gender,weight,city,address,bloodType,avail,phone,anonymous){   // Don't forget to change the variables as the form
+function Donation(name,age,gender,weight,city,address,bloodType,avail,phone,anonymous){ // Don't forget to change the variables as the form
 
-    this.name = name;
-    this.age = age;
-    this.gender = gender;
-    this.weight = weight;
-    this.city = city;
-    this.address = address;
-    this.bloodType = bloodType;
-    this.avail = avail;
-    this.phone = phone;
-    this.anony = anonymous;
+  this.name = name;
+  this.age = age;
+  this.gender = gender;
+  this.weight = weight;
+  this.city = city;
+  this.address = address;
+  this.bloodType = bloodType;
+  this.avail = avail;
+  this.phone = phone;
+  this.anony = anonymous;
 
-    Donation.array.push(this);
+  Donation.array.push(this);
 
 }
 
-storeDonors();
+grabDonors();
 
 
-
-formElement.addEventListener('submit', submitHandling);    // this is the form submit handling event.
+// formElement.addEventListener('submit', submitHandling); // this is the form submit handling event.
 
 function submitHandling(event){
-    event.preventDefault();
+//   event.preventDefault();
 
-    new Donation();    // add here the values from the forms in order to creat a new instance.
+  new Donation('osaid',23,'male',72,'Maan','engineers st/ building#9','O+','thur-sat','0777437637',true); // add here the values from the forms in order to creat a new instance.
+
+  storeDonors();
+  // Put Ghadder's work here to compare and add #times
 
 }
 
+submitHandling();
 
 
 
@@ -41,7 +44,11 @@ function submitHandling(event){
 
 
 
-Donation.array = grabDonors();
+
+
+
+
+
 
 
 
@@ -50,12 +57,12 @@ Donation.array = grabDonors();
 
 function storeDonors(){
 
-localStorage.setItem('arrayDonors',JSON.stringify(Donation.array));
+  localStorage.setItem('arrayDonors',JSON.stringify(Donation.array));
 
 }
 
 function grabDonors(){
 
-    let storedDonArr = JSON.parse(localStorage.getItem('arrayDonors'));
-    return storedDonArr;
-    }
+  let storedDonArr = JSON.parse(localStorage.getItem('arrayDonors'));
+  return storedDonArr;
+}

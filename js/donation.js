@@ -26,7 +26,10 @@ if (localStorage.getItem('arrayDonors')) {
   Donation.array = grabDonors();
 }
 
-console.log(Donation.array);
+
+// console.log(Donation.array);
+
+
 
 formElement.addEventListener('submit', submitHandling); // this is the form submit handling event.
 
@@ -69,16 +72,16 @@ function submitHandling(event) {
     new Donation(name, age, gender, weight, city, address, bloodType, avail1, avail2, mobile);
   }
 
-
-
-  // leaderBoardVotes();
   storeDonors();
-  console.log(Donation.array);
 
 
 }
 
 
+
+function leaderBoardNames(){
+  
+}
 
 
 

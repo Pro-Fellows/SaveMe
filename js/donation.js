@@ -26,7 +26,7 @@ if (localStorage.getItem('arrayDonors')) {
   Donation.array = grabDonors();
 }
 
-console.log(Donation.array)
+console.log(Donation.array);
 
 formElement.addEventListener('submit', submitHandling); // this is the form submit handling event.
 
@@ -46,16 +46,23 @@ function submitHandling(event) {
 
 
 
+  let arrayTest = [];
+
   if (localStorage.getItem('arrayDonors')) {
 
     for (let i = 0; i < Donation.array.length; i++) {
+      arrayTest.push(Donation.array[i].name);
+    }
 
-      if (name !== Donation.array[i].name) {
-        new Donation(name, age, gender, weight, city, address, bloodType, avail1, avail2, mobile); // add here the values from the forms in order to creat a new instance.
-        break;
-      } else if (name === Donation.array[i].name) {
-        Donation.array[i].votes++;
-        break;
+    if (!arrayTest.includes(name)) {
+      new Donation(name, age, gender, weight, city, address, bloodType, avail1, avail2, mobile); // add here the values from the forms in order to creat a new instance.
+
+    } else if (arrayTest.includes(name)) {
+      Donation.array.find(isName).votes++;
+
+      // eslint-disable-next-line no-inner-declarations
+      function isName(person){
+        return person.name === name;
       }
     }
   } else {
@@ -63,16 +70,13 @@ function submitHandling(event) {
   }
 
 
+
   // leaderBoardVotes();
   storeDonors();
   console.log(Donation.array);
 
 
-
 }
-
-
-
 
 
 

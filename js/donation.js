@@ -16,7 +16,7 @@ function Donation(name, age, gender, weight, city, address, bloodType, avail1, a
   this.avail1 = avail1;
   this.avail2 = avail2;
   this.phone = phone;
-  this.votes = 1;
+  this.frequency = 1;
 
   Donation.array.push(this);
 
@@ -58,7 +58,7 @@ function submitHandling(event) {
       new Donation(name, age, gender, weight, city, address, bloodType, avail1, avail2, mobile); // add here the values from the forms in order to creat a new instance.
 
     } else if (arrayTest.includes(name)) {
-      Donation.array.find(isName).votes++;
+      Donation.array.find(isName).frequency++; // The find() method returns the object of which its name is equal to the provided value in the function.
 
       // eslint-disable-next-line no-inner-declarations
       function isName(person){

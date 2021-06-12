@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 /*
  * Reference - https://codepen.io/supah/pen/WwrJpw
  */
@@ -24,6 +25,7 @@
 	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 	z-index: 1;
 	overflow: hidden;
+	font-family:'Bebas Neue', cursive;
 }
 
 /* leaderboard */

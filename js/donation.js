@@ -1,6 +1,8 @@
 'use strict';
 
 let formElement = document.getElementById('formID'); // Add the id
+let leaderBoardEl = document.getElementById('olElement');
+let leaderBoardArray = [];
 
 Donation.array = [];
 
@@ -64,7 +66,7 @@ function submitHandling(event) {
       Donation.array.find(isName).frequency++; // The find() method returns the object of which its name is equal to the provided value in the function.
 
       // eslint-disable-next-line no-inner-declarations
-      function isName(person){
+      function isName(person) {
         return person.name === name;
       }
     }
@@ -79,10 +81,21 @@ function submitHandling(event) {
 
 
 
-function leaderBoardNames(){
+function leaderBoardHander() {
   
-}
+  for (let k = 1; k <= 5; k++) {
+    let counter = `li:nth-child(${k})`
+    let firstLiEl = leaderBoardEl.querySelector(counter);
+    console.log(firstLiEl);
 
+    let firstName = firstLiEl.querySelector('mark');
+
+    firstName.textContent = 'Osaid';
+    let freq = firstLiEl.querySelector('small');
+    freq.textContent = 5;
+
+  }
+}
 
 
 

@@ -20,6 +20,8 @@ rating.prototype.render = function(){
 
     let list = document.createElement('ol');
     gobalVar.appendChild(list);
+
+
     
 
 
@@ -51,4 +53,9 @@ info.render();
 
 
 
+
+function grabDonors(){
+  let storedDonArr = JSON.parse(localStorage.getItem('arrayDonors'));
+  return storedDonArr;
+}
 

@@ -1,10 +1,10 @@
 'use strict';
 
-let formElement = document.getElementById('formID'); // Add the
+let formElement = document.getElementById('formID'); // Add the id
 
 Donation.array = [];
 
-function Donation(name,age,gender,weight,city,address,bloodType,avail1,avail2,phone){ // Don't forget to change the variables as the form
+function Donation(name, age, gender, weight, city, address, bloodType, avail1, avail2, phone) { // Don't forget to change the variables as the form
 
   this.name = name;
   this.age = age;
@@ -16,17 +16,21 @@ function Donation(name,age,gender,weight,city,address,bloodType,avail1,avail2,ph
   this.avail1 = avail1;
   this.avail2 = avail2;
   this.phone = phone;
+  this.votes = 1;
 
   Donation.array.push(this);
 
 }
 
-Donation.array = grabDonors();
+if (localStorage.getItem('arrayDonors')) {
+  Donation.array = grabDonors();
+}
 
+console.log(Donation.array)
 
 formElement.addEventListener('submit', submitHandling); // this is the form submit handling event.
 
-function submitHandling(event){
+function submitHandling(event) {
   event.preventDefault();
   console.log(event);
   let name = event.target.fname.value;
@@ -40,14 +44,42 @@ function submitHandling(event){
   let avail2 = event.target.availability1.value;
   let mobile = event.target.mobileNumber.value;
 
-  new Donation(name,age,gender,weight,city,address,bloodType,avail1,avail2,mobile); // add here the values from the forms in order to creat a new instance.
 
+
+  if (localStorage.getItem('arrayDonors')) {
+    for (let i = 0; i < Donation.array.length; i++) {
+
+      if (name !== Donation.array[i].name) {
+        new Donation(name, age, gender, weight, city, address, bloodType, avail1, avail2, mobile); // add here the values from the forms in order to creat a new instance.
+        
+      } else if (name === Donation.array[i].name) {
+        Donation.array[i].votes++;
+      }
+    }
+  } else {
+    new Donation(name, age, gender, weight, city, address, bloodType, avail1, avail2, mobile);
+  }
+
+
+  // leaderBoardVotes();
   storeDonors();
-  // Put Ghadder's work here to compare and add #times
+  console.log(Donation.array);
+
+
 
 }
 
 
+
+// let arrayOfVotes = [];
+
+// function leaderBoardVotes() {
+//   for (let i = 0; i < Donation.array.length; i++) {
+//     arrayOfVotes.push(Donation.array[i].votes);
+//     arrayOfVotes.sort(function (b, a) { return a - b });
+//   }
+//   console.log(arrayOfVotes);
+// }
 
 
 
@@ -59,13 +91,13 @@ function submitHandling(event){
 
 //Beyond this line is for localStorage functions
 
-function storeDonors(){
+function storeDonors() {
 
-  localStorage.setItem('arrayDonors',JSON.stringify(Donation.array));
+  localStorage.setItem('arrayDonors', JSON.stringify(Donation.array));
 
 }
 
-function grabDonors(){
+function grabDonors() {
 
   let storedDonArr = JSON.parse(localStorage.getItem('arrayDonors'));
   return storedDonArr;

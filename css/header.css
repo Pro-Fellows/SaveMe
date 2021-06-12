@@ -4,33 +4,30 @@
 header {
     height: 0px;
     font-size: 32px;
-   
-
 }
-#logo{
+
+header #logo{
     background-color : #E35046;
     height: 110px;
     width: 150px;
-   
 }
 
-ul{
+header ul{
     background-color : #E35046;
     list-style-type: none;
     margin-top: -80px;
     margin-left: 130px;
 }
 
-#joinUs{
-
+header #joinUs{
     margin-left: 400px;
-
 }
 
-li{
+header li{
     display: inline-block;
 }
-li a{
+
+header li a{
    font-family:'Bebas Neue', cursive;
    color: white;
    font-size: 40px;
@@ -39,10 +36,10 @@ li a{
    text-decoration: none;
    margin-left: 30px;
    padding-top: 10px;
-   padding-bottom: 10px;
-   
+   padding-bottom: 10px;   
 }
-li a:hover{
+
+header li a:hover{
     color: white ;
     background-color: #E35046;
     border-radius: 20px;

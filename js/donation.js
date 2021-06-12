@@ -47,13 +47,15 @@ function submitHandling(event) {
 
 
   if (localStorage.getItem('arrayDonors')) {
+
     for (let i = 0; i < Donation.array.length; i++) {
 
       if (name !== Donation.array[i].name) {
         new Donation(name, age, gender, weight, city, address, bloodType, avail1, avail2, mobile); // add here the values from the forms in order to creat a new instance.
-        
+        break;
       } else if (name === Donation.array[i].name) {
         Donation.array[i].votes++;
+        break;
       }
     }
   } else {
@@ -71,15 +73,6 @@ function submitHandling(event) {
 
 
 
-// let arrayOfVotes = [];
-
-// function leaderBoardVotes() {
-//   for (let i = 0; i < Donation.array.length; i++) {
-//     arrayOfVotes.push(Donation.array[i].votes);
-//     arrayOfVotes.sort(function (b, a) { return a - b });
-//   }
-//   console.log(arrayOfVotes);
-// }
 
 
 

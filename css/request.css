@@ -4,13 +4,17 @@
     box-sizing: border-box;
   }
 
+  
+
 #requestDiv{
     text-align: center;
     background-image: url(../assets/requestBlood.jpg);
     width: 100%;
     display: block;
-    height: 30%;
+    height: 850px;
     background-size:cover;
+    background-color: rgba(76, 192, 147, 0.335);
+    background-blend-mode: overlay;
     background-position:top;
     padding-top: 250px;
     background-repeat: no-repeat;

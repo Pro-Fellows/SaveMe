@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Request Blood</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/request.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="../logo.jpg" alt="">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/donate.html">Donate</a></li>
+            <li><a href="pages/request.html">Request Blood</a></li>
+            <li><a href="pages/eligibility.html">Eligibility</a></li>
+            <li><a href="pages/aboutUs.html">About Us</a></li>
+            <li id="joinUs"><a href="pages/joinUs.html">Join Us</a></li>
+        </ul>
+    </header>
+   
+    <main>
+        <div id="requestDiv">
+           
+          <h1>Anyone Whose Life Has Been Touched By Blood <br>  Understands Its Power To Transform Lives</h1>  
+        </div>
+
+        <div class="form-container">
+            <form id="requestForm">
+                <h2>BLood Request Form</h2>
+                <fieldset>
+                    <label for="nameField">Full Name</label>
+                    <input type="text" id="nameField" placeholder="Enter Your Full Name" required>
+                    <br>
+                    <label for="ageField">Age</label>
+                    <input type="number" id="ageField" min="1" max="100">
+                    <br>
+                    <label for="genderField">Gender</label>
+                    <select name="gender" id="genderField">
+                        <option value="none">Select</option>
+                       <option value="male">Male</option>
+                       <option value="female">Female</option>
+                    </select>
+                    <br>
+                    <label for="cityField">City</label>
+                     <select name="city" id="cityField">
+                         <option value="none">Select</option>
+                        <option value="amman">Amman</option>
+                        <option value="irbid">Irbid</option>
+                        <option value="zarqa">Zarqa</option>
+                        <option value="balqa'">Blaqa'</option>
+                        <option value="jerash">Jerash</option>
+                        <option value="ajloun">Ajloun</option>
+                        <option value="mafraq">Mafraq</option>
+                        <option value="madaba">Madaba</option>
+                        <option value="kerak">Kerak</option>
+                        <option value="tafila">Tafila</option>
+                        <option value="ma'an">Ma'an</option>
+                        <option value="aqaba">Aqaba</option>
+                      </select>
+                    <br>
+                    <label for="phoneField">Phone Number</label>
+                    <input type="tel" id="phoneField" placeholder="Enter Your Mobile Number" maxlength="10" required>
+                    <br>
+                    <label for="bloodField">Required Blood Type</label>
+                    <select name="bloodType" id="bloodField" required>
+                        <option value="none">Select</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                    <br>
+                    <label for="unitsField">Required Blood Units</label>
+                    <input type="number" id="unitsField" min="1" required>
+                    <br>
+                    <label for="frequencyField">Frequency Of Request</label>
+                    <select name="frequency" id="frequencyField" required>
+                    <option value="none">Select</option>
+                    <option value="oneTime">One Time</option>
+                    <option value="frequent">Frequent</option>
+                    </select>
+                    <br>
+                    <label for="caseField">Case Status (Optional)</label><br>
+                    <textarea name="" id="caseField" cols="40" rows="10" ></textarea>
+                    <br>
+                    <input type="submit" value="Submit">
+    
+                </fieldset>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <div id="copyRights">
+            <p>All Rights Reserved &copy; Pro-Fellows</p>
+        </div>
+
+        <div id="footerIcon">
+
+            <div id="icons">
+                <a href="https://www.facebook.com/"> <img src="../assets/fb.png" alt="facebook icon"></a>
+                <a href="https://twitter.com/"> <img src="../assets/twitter.png" alt="twitter icon"></a>
+                <a href="https://www.instagram.com/"> <img src="../assets/instagram.png" alt="instagram icon"></a>
+            </div>
+
+            <div id="patreon">
+                <p>Support us on:<a href="https://www.patreon.com/">Patreon</a></p>
+            </div>
+
+        </div>
+    </footer>
+    <script src="../js/request.js"></script>
+</body>
+</html>

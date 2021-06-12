@@ -2,7 +2,7 @@
 
 let formElement = document.getElementById('formID'); // Add the id
 let leaderBoardEl = document.getElementById('olElement');
-let leaderBoardArray = [];
+
 
 Donation.array = [];
 
@@ -81,7 +81,7 @@ function submitHandling(event) {
 
 
 
-function leaderBoardHander() {
+function leaderBoardHandler() {
   
   for (let k = 1; k <= 5; k++) {
     let counter = `li:nth-child(${k})`
@@ -96,6 +96,8 @@ function leaderBoardHander() {
 
   }
 }
+
+leaderBoardHandler()
 
 
 

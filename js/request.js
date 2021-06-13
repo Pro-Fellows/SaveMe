@@ -20,6 +20,9 @@ function RequestBlood(name, age, gender, city, phoneNumber, bloodType, unitNumbe
 
 }
 
+let arrayDonors = grabDonors();
+
+
 
 formEl.addEventListener('submit',handleSubmitting);
 
@@ -59,4 +62,12 @@ function getData(){
   if(values){
     RequestBlood.allField = JSON.parse(values);
   }
+}
+
+
+
+function grabDonors() {
+
+  let storedDonArr = JSON.parse(localStorage.getItem('arrayDonors'));
+  return storedDonArr;
 }

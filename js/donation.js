@@ -80,24 +80,28 @@ function submitHandling(event) {
 }
 
 
+// We need to creat a new array, push all the objects from the Donation.array, sort the objects by frequency then use the function below
+
+for(let n =0; n<Donation.array.length; )
+
+let leaderBoardArr = [ {'name':'osaid','freque':3},{'name':'Sara','freque':2} ];
 
 function leaderBoardHandler() {
-  
+
   for (let k = 1; k <= 5; k++) {
-    let counter = `li:nth-child(${k})`
+    let counter = `li:nth-child(${k})`;
     let firstLiEl = leaderBoardEl.querySelector(counter);
-    console.log(firstLiEl);
 
     let firstName = firstLiEl.querySelector('mark');
-
-    firstName.textContent = 'Osaid';
+    let counter2 = k-1;
+    firstName.textContent = leaderBoardArr[counter2].name;
     let freq = firstLiEl.querySelector('small');
-    freq.textContent = 5;
+    freq.textContent = leaderBoardArr[counter2].freque;
 
   }
 }
 
-leaderBoardHandler()
+leaderBoardHandler();
 
 
 

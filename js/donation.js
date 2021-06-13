@@ -82,9 +82,9 @@ function submitHandling(event) {
 
 // We need to creat a new array, push all the objects from the Donation.array, sort the objects by frequency then use the function below
 
-for(let n =0; n<Donation.array.length; )
+// for(let n =0; n<Donation.array.length; )
 
-let leaderBoardArr = [ {'name':'osaid','freque':3},{'name':'Sara','freque':2} ];
+let leaderBoardArr = [ {'name':'Abdulqader','freque':8},{'name':'Sara','freque':2} ];
 
 function leaderBoardHandler() {
 
@@ -102,7 +102,6 @@ function leaderBoardHandler() {
 }
 
 leaderBoardHandler();
-
 
 
 

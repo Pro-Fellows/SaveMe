@@ -2,11 +2,69 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../css/donate.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/donate.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/leaderboard.css">
 </head>
-<section id="form">
 
-    <h3>Donation Form</h3>
+<header>
+
+    <img id="logo" src="../logo.jpg" alt="">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./donate.html">Donate</a></li>
+        <li><a href="./request.html">Request Blood</a></li>
+        <li><a href="./eligibility.html">Eligibility</a></li>
+        <li><a href="./aboutUs.html">About Us</a></li>
+        <li id="joinUs"><a href="./joinUs.html">Join Us</a></li>
+    </ul>
+
+</header>
+
+<body>
+    <div id="slogan" class="divv">
+        <div>
+                        
+        </div>
+    </div>
+
+    <div id="leaderboardContiner">
+        <div class="container">
+            <div class="leaderboard">
+                <div class="head">
+                    <h1>Top Blood Donators</h1>
+                </div>
+                <div class="body">
+                    <ol id="olElement">
+                        <li>
+                            <mark>Jerry Wood</mark>
+                            <small>948</small>
+                        </li>
+                        <li>
+                            <mark>Brandon Barnes</mark>
+                            <small>750</small>
+                        </li>
+                        <li>
+                            <mark>Raymond Knight</mark>
+                            <small>684</small>
+                        </li>
+                        <li>
+                            <mark>Trevor McCormick</mark>
+                            <small>335</small>
+                        </li>
+                        <li>
+                            <mark>Andrew Fox</mark>
+                            <small>296</small>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <h3 id="formH3">Donation Form</h3>
 
     <div class="form-container">
         <form action="/action_page.php" id="formID">
@@ -63,7 +121,8 @@
             <input type="date" id="availability2" name="availability2" min="2021-06-11" max="2021-12-31">
 
             <label for="mobile-number">Mobile Number</label>
-            <input type="tel" id="mobileNumber" name="mobile-number" placeholder="Your Mobile Number" minlength="10", maxlength="10">
+            <input type="tel" id="mobileNumber" name="mobile-number" placeholder="Your Mobile Number" minlength="10" ,
+                maxlength="10">
 
             <!-- <label for="">Do you want your name to be displayed in the leader-board ?</label>
             <input id="anoy" name="privacy" type="checkbox"> -->
@@ -71,8 +130,8 @@
             <input type="submit" value="Submit">
         </form>
     </div>
-  
+
     <script src="../js/donation.js"></script>
-    </body>
+</body>
 
 </html>

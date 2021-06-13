@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Request Blood</title>
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/request.css">
 </head>
+
 <body>
     <header>
         <img id="logo" src="../logo.jpg" alt="">
@@ -21,18 +23,18 @@
             <li id="joinUs"><a href="pages/joinUs.html">Join Us</a></li>
         </ul>
     </header>
-   
+
     <main>
         <div id="requestDiv">
-           
-          <h1>Anyone Whose Life Has Been Touched By Blood <br>  Understands Its Power To Transform Lives</h1>  
+
+            <h1>Anyone Whose Life Has Been Touched By Blood <br> Understands Its Power To Transform Lives</h1>
         </div>
 
         <div class="form-container">
 
             <form id="requestForm">
-                <h2>BLood Request Form</h2>
                 <fieldset>
+                    <h2>BLood Request Form</h2>
                     <label for="nameField">Full Name</label>
                     <input type="text" id="nameField" placeholder="Enter Your Full Name" required>
                     <br>
@@ -42,13 +44,13 @@
                     <label for="genderField">Gender</label>
                     <select name="gender" id="genderField">
                         <option value="none">Select</option>
-                       <option value="male">Male</option>
-                       <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
                     </select>
                     <br>
                     <label for="cityField">City</label>
-                     <select name="city" id="cityField">
-                         <option value="none">Select</option>
+                    <select name="city" id="cityField">
+                        <option value="none">Select</option>
                         <option value="amman">Amman</option>
                         <option value="irbid">Irbid</option>
                         <option value="zarqa">Zarqa</option>
@@ -61,7 +63,7 @@
                         <option value="tafila">Tafila</option>
                         <option value="ma'an">Ma'an</option>
                         <option value="aqaba">Aqaba</option>
-                      </select>
+                    </select>
                     <br>
                     <label for="phoneField">Phone Number</label>
                     <input type="tel" id="phoneField" placeholder="Enter Your Mobile Number" maxlength="10" required>
@@ -84,24 +86,22 @@
                     <br>
                     <label for="frequencyField">Frequency Of Request</label>
                     <select name="frequency" id="frequencyField" required>
-                    <option value="none">Select</option>
-                    <option value="oneTime">One Time</option>
-                    <option value="frequent">Frequent</option>
+                        <option value="none">Select</option>
+                        <option value="oneTime">One Time</option>
+                        <option value="frequent">Frequent</option>
                     </select>
                     <br>
                     <label for="caseField">Case Status (Optional)</label><br>
-                    <textarea name="" id="caseField" cols="40" rows="10" ></textarea>
+                    <textarea name="" id="caseField" cols="40" rows="10"></textarea>
                     <br>
                     <input type="submit" value="Submit">
-    
+
                 </fieldset>
             </form>
 
 
             <div id="cardsContainer">
-                <!-- <div class="card">
-                
-                </div> -->
+
             </div>
 
         </div>
@@ -128,4 +128,5 @@
     </footer>
     <script src="../js/request.js"></script>
 </body>
+
 </html>

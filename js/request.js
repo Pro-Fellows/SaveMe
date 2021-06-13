@@ -46,7 +46,6 @@ function handleSubmitting(event) {
 
   getDonorBlood(newType);
   getData();
-  // available();
 }
 
 
@@ -56,8 +55,6 @@ for (let m = 0; m < arrayDonors.length; m++) {
   let obj = { 'name': arrayDonors[m].name, 'bloodType': arrayDonors[m].bloodType, 'city': arrayDonors[m].city, 'phone': arrayDonors[m].phone };
   extractedDonorsArray.push(obj);
 }
-
-console.log(extractedDonorsArray);
 
 
 
@@ -129,7 +126,6 @@ function renderCards(array) {
   }
 
 }
-
 
 
 

@@ -46,6 +46,27 @@ function handleSubmitting(event){
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// beyond this is for storage
+
 function setData(){
 
   let stringArray = JSON.stringify(RequestBlood.allFields);

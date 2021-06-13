@@ -47,10 +47,13 @@ function handleSubmitting(event){
 
 
 
+// Name , BT , Phone Number , City
+
+function available(){
 
 
 
-
+}
 
 
 

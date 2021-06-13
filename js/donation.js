@@ -104,7 +104,7 @@ function leaderBoardHandler() {
 
   // let arrayOfStore = JSON.parse(localStorage.getItem('arrayDonors'));
   for (let k = 1; k <= 5; k++) {
-
+    console.log(Donation.array);
     let counter = `li:nth-child(${k})`; // this is used for the li selection.
     let firstLiEl = leaderBoardEl.querySelector(counter);
     let firstName = firstLiEl.querySelector('mark');
@@ -115,6 +115,10 @@ function leaderBoardHandler() {
 
 
 }
+
+// if(!(Donation.array.length === k)){
+//   continue;
+// }
 
 leaderBoardFunction();
 leaderBoardHandler();

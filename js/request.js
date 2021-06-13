@@ -1,9 +1,9 @@
 'use strict';
 
 let formEl = document.getElementById('requestForm');
-Request.allFields = [];
+RequestBlood.allFields = [];
 
-function Request(name, age, gender, city, phoneNumber, bloodType, unitNumber, frequency, caseStatus){
+function RequestBlood(name, age, gender, city, phoneNumber, bloodType, unitNumber, frequency, caseStatus){
   this.name = name;
   this.age = age;
   this.gender = gender;
@@ -14,7 +14,7 @@ function Request(name, age, gender, city, phoneNumber, bloodType, unitNumber, fr
   this.frequency = frequency;
   this.caseStatus = caseStatus;
 
-  Request.allFields.push(this);
+  RequestBlood.allFields.push(this);
 
   setData();
 
@@ -37,7 +37,7 @@ function handleSubmitting(event){
   let newFreq = event.target.frequencyField.value;
   let newCase = event.target.caseField.value;
 
-  new Request(newName, newAge, newGender, newCity, newNumber, newType, newUnits, newFreq, newCase);
+  new RequestBlood(newName, newAge, newGender, newCity, newNumber, newType, newUnits, newFreq, newCase);
 
   getData();
 }
@@ -45,7 +45,7 @@ function handleSubmitting(event){
 
 function setData(){
 
-  let stringArray = JSON.stringify(Request.allFields);
+  let stringArray = JSON.stringify(RequestBlood.allFields);
 
   localStorage.setItem('Data', stringArray);
 
@@ -57,6 +57,6 @@ function getData(){
   let values = localStorage.getItem('Data');
 
   if(values){
-    Request.allField = JSON.parse(values);
+    RequestBlood.allField = JSON.parse(values);
   }
 }

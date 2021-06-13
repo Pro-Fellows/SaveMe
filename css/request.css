@@ -78,6 +78,7 @@ h1{
 
 
   .card {
+    display: inline-block;
     background-color: brown;
     width: 400px;
     height: 200px;

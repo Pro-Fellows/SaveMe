@@ -59,68 +59,76 @@ for (let m = 0; m < arrayDonors.length; m++) {
 
 console.log(extractedDonorsArray);
 
-// Name , BT , Phone Number , City
-
-
-// function available(x){
-
-//   let liEl = document.createElement('li');
-//   ulEl.appendChild(liEl);
-//   liEl.textContent = extractedDonorsArray[0].name ;
-
-// }
 
 
 
-
-
-
-function getDonorBlood(newType) {
+function getDonorBlood(newType) { // This function will check for the compatible blood types with the requested blood type and render them on the page.
 
   if (newType === 'O-') {
     let oNegative = extractedDonorsArray.filter(a => a.bloodType === 'O-');
-    // console.log(oNegative);
-
-    for(let i=0;i<oNegative.length;i++){
-
-      let name = oNegative[i].name;
-      let bloodType = oNegative[i].bloodType;
-      let city = oNegative[i].city;
-      let phone = oNegative[i].phone;
-
-      let divEl = document.createElement('div');
-      divEl.setAttribute('class','card');
-      cardsCont.appendChild(divEl);
-
-      let h1El = document.createElement('h1');
-      divEl.appendChild(h1El);
-      h1El.textContent = `The donar name is: ${name}`;
-
-      let h2El = document.createElement('h2');
-      divEl.appendChild(h2El);
-      h2El.textContent = `The blood type is: ${bloodType}`;
-
-      h2El = document.createElement('h2');
-      divEl.appendChild(h2El);
-      h2El.textContent = `The donar lives in: ${city}`;
-
-      h2El = document.createElement('h2');
-      divEl.appendChild(h2El);
-      h2El.textContent = `The phone number is: ${phone}`;
-
-    }
-
+    renderCards(oNegative);
 
   } else if (newType === 'O+') {
     let oPostive = extractedDonorsArray.filter(a => a.bloodType === 'O-' || a.bloodType === 'O+');
-    console.log(oPostive);
+    renderCards(oPostive);
+
+  } else if (newType === 'A-') {
+    let aNegative = extractedDonorsArray.filter(a => a.bloodType === 'O-' || a.bloodType === 'A-');
+    renderCards(aNegative);
+
+  } else if (newType === 'A+') {
+    let aPostive = extractedDonorsArray.filter(a => a.bloodType === 'O-' || a.bloodType === 'O+' || a.bloodType === 'A-' || a.bloodType === 'A+');
+    renderCards(aPostive);
+
+  } else if (newType === 'B-') {
+    let bNegative = extractedDonorsArray.filter(a => a.bloodType === 'O-' || a.bloodType === 'B-');
+    renderCards(bNegative);
+
+  } else if (newType === 'B+') {
+    let bPostive = extractedDonorsArray.filter(a => a.bloodType === 'O-' || a.bloodType === 'O+' || a.bloodType === 'B-' || a.bloodType === 'B+');
+    renderCards(bPostive);
+
+  } else if (newType === 'AB-') {
+    let abNegative = extractedDonorsArray.filter(a => a.bloodType === 'O-' || a.bloodType === 'A-' || a.bloodType === 'B-' || a.bloodType === 'AB-');
+    renderCards(abNegative);
+
+  } else if (newType === 'AB+') {
+    let abPostive = extractedDonorsArray.filter(a => a.bloodType === 'O-' || a.bloodType === 'O+' || a.bloodType === 'A-' || a.bloodType === 'A+' || a.bloodType === 'B-' || a.bloodType === 'B+' || a.bloodType === 'AB-' || a.bloodType === 'AB+');
+    renderCards(abPostive);
   }
+
+
 }
 
 
 
+function renderCards(array) {
 
+  for (let i = 0; i < array.length; i++) {
 
+    let divEl = document.createElement('div');
+    divEl.setAttribute('class', 'card');
+    cardsCont.appendChild(divEl);
+
+    let h1El = document.createElement('h1');
+    divEl.appendChild(h1El);
+    h1El.textContent = `The donar name is: ${array[i].name}`;
+
+    let h2El = document.createElement('h2');
+    divEl.appendChild(h2El);
+    h2El.textContent = `The blood type is: ${array[i].bloodType}`;
+
+    h2El = document.createElement('h2');
+    divEl.appendChild(h2El);
+    h2El.textContent = `The donar lives in: ${array[i].city}`;
+
+    h2El = document.createElement('h2');
+    divEl.appendChild(h2El);
+    h2El.textContent = `The phone number is: ${array[i].phone}`;
+
+  }
+
+}
 
 
 

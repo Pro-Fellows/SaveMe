@@ -1,78 +1,215 @@
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/donate.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/leaderboard.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../css/donate.css">
-</head>
-<section id="form">
+  <header>
+    <img id="logo" src="../img/logo.jpg" alt="" />
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="request.html">Request Blood</a></li>
+      <li><a href="eligibility.html">Eligibility</a></li>
+      <li><a href="aboutUs.html">About Us</a></li>
+    </ul>
+  </header>
 
-    <h3>Donation Form</h3>
+  <body>
+    <div id="slogan" class="divv">
+      <div></div>
+    </div>
+
+    <div id="leaderboardContiner">
+        <div class="container">
+            <div class="leaderboard">
+                <div class="head">
+                    <h1>Top Blood Donators</h1>
+                </div>
+                <div class="body">
+                    <ol id="olElement">
+                        <li>
+                            <mark></mark>
+                            <small></small>
+                        </li>
+                        <li>
+                            <mark></mark>
+                            <small></small>
+                        </li>
+                        <li>
+                            <mark></mark>
+                            <small></small>
+                        </li>
+                        <li>
+                            <mark></mark>
+                            <small></small>
+                        </li>
+                        <li>
+                            <mark></mark>
+                            <small></small>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <h3 id="formH3">Donation Form</h3>
 
     <div class="form-container">
-        <form action="/action_page.php" id="formID">
-            <label for="name">Name</label>
-            <input type="text" id="fname" name="name" placeholder="Your name">
 
-            <label for="age">Age</label>
-            <input type="text" id="age" name="age" placeholder="Your age">
+      <form action="/action_page.php" id="formID">
+        <label for="name">Name</label>
+        <input type="text" id="fname" name="name" placeholder="Your name" />
 
-            <label for="gender">Gender</label>
-            <select id="gender" name="gender" placeholder="Your gender">
-                <option value="none">select</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-            </select>
+        <label for="age">Age</label>
+        <input type="text" id="age" name="age" placeholder="Your age" />
 
-            <label for="weight">Weight (kg)</label>
-            <input type="number" id="weight" name="weight" placeholder="Your weight in kg">
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" placeholder="Your gender">
+          <option value="none">select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
 
-            <label for="city">City</label>
-            <select id="city" name="city">
-                <option value="amman">Amman</option>
-                <option value="ajloun">Ajloun</option>
-                <option value="aqaba">Aqaba</option>
-                <option value="irbid">Irbid</option>
-                <option value="jarash">Jarash</option>
-                <option value="karak">Karak</option>
-                <option value="maan">Maan</option>
-                <option value="madaba">Madaba</option>
-                <option value="mafraq">Mafraq</option>
-                <option value="salt">Salt</option>
-                <option value="tafila">Tafila</option>
-                <option value="zarqa">Zarqa</option>
-            </select>
+        <label for="weight">Weight (kg)</label>
+        <input
+          type="number"
+          id="weight"
+          name="weight"
+          placeholder="Your weight in kg"
+        />
 
-            <label for="address">Address</label>
-            <input type="text" id="address" name="address" placeholder="Your address">
+        <label for="city">City</label>
+        <select id="city" name="city">
+          <option value="amman">Amman</option>
+          <option value="ajloun">Ajloun</option>
+          <option value="aqaba">Aqaba</option>
+          <option value="irbid">Irbid</option>
+          <option value="jarash">Jarash</option>
+          <option value="karak">Karak</option>
+          <option value="maan">Maan</option>
+          <option value="madaba">Madaba</option>
+          <option value="mafraq">Mafraq</option>
+          <option value="salt">Salt</option>
+          <option value="tafila">Tafila</option>
+          <option value="zarqa">Zarqa</option>
+        </select>
 
-            <label for="blood-type">Blood Type</label>
-            <select id="bloodType" name="blood-type" placeholder="Your blood type">
-                <option value="none">select</option>
-                <option value="a+">A+</option>
-                <option value="a-">A-</option>
-                <option value="ab+">AB+</option>
-                <option value="ab-">AB-</option>
-                <option value="b+">B+</option>
-                <option value="b-">B-</option>
-                <option value="o+">O+</option>
-                <option value="o-">O-</option>
-            </select>
+        <label for="address">Address</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          placeholder="Your address"
+        />
 
-            <label for="availability">Availability:</label>
-            <input type="date" id="availability1" name="availability1" min="2021-06-11" max="2021-12-31">
-            <input type="date" id="availability2" name="availability2" min="2021-06-11" max="2021-12-31">
+        <label for="blood-type">Blood Type</label>
+        <select id="bloodType" name="blood-type" placeholder="Your blood type">
+          <option value="none">select</option>
+          <option value="a+">A+</option>
+          <option value="a-">A-</option>
+          <option value="ab+">AB+</option>
+          <option value="ab-">AB-</option>
+          <option value="b+">B+</option>
+          <option value="b-">B-</option>
+          <option value="o+">O+</option>
+          <option value="o-">O-</option>
+        </select>
 
-            <label for="mobile-number">Mobile Number</label>
-            <input type="tel" id="mobileNumber" name="mobile-number" placeholder="Your Mobile Number" minlength="10", maxlength="10">
+        <label for="availability">Availability:</label>
+        <input
+          type="date"
+          id="availability1"
+          name="availability1"
+          min="2021-06-11"
+          max="2021-12-31"
+        />
+        <input
+          type="date"
+          id="availability2"
+          name="availability2"
+          min="2021-06-11"
+          max="2021-12-31"
+        />
 
-            <!-- <label for="">Do you want your name to be displayed in the leader-board ?</label>
-            <input id="anoy" name="privacy" type="checkbox"> -->
+        <label for="mobile-number">Mobile Number</label>
+        <input
+          type="tel"
+          id="mobileNumber"
+          name="mobile-number"
+          placeholder="Your Mobile Number"
+          minlength="10"
+          ,
+          maxlength="10"
+        />
 
-            <input type="submit" value="Submit">
-        </form>
+       
+
+        <input type="submit" value="Submit" />
+      </form>
     </div>
-  
-    <script src="../js/donation.js"></script>
-    </body>
+    <footer class="footer">
+      <div class="footerContainer">
+        <div class="row">
+          <div class="footer-col">
+            <img src="../assets/logo2.png" alt="" />
+          </div>
 
+          <div class="footer-col">
+            <h4>Save Me</h4>
+            <ul>
+              <li><a href="/pages/aboutUs.html">About us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow us</h4>
+            <ul>
+              <li>
+                <a href="#">Facebook</a
+                ><img
+                  id="fbIcon"
+                  src="../assets/facebook.png"
+                  alt="facebookIcon"
+                />
+              </li>
+              <li>
+                <a href="#">Twitter</a>
+                <img
+                  id="twitterIcon"
+                  src="../assets/twitter.png"
+                  alt="twitterIcon"
+                />
+              </li>
+              <li>
+                <a href="#">Instagram</a>
+                <img
+                  id="instaIcon"
+                  src="../assets/instagram.png"
+                  alt="instagramIcon"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact us</h4>
+            <ul>
+              <li>+962 (654) 3621</li>
+              <li>+962 (657) 4664</li>
+              <li>info@saveme.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/donation.js"></script>
+  </body>
 </html>

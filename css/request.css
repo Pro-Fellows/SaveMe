@@ -8,7 +8,7 @@
 
 #requestDiv{
     text-align: center;
-    background-image: url(../assets/requestBlood.jpg);
+    background-image: url(../img/Blood-Donor.jpg);
     width: 100%;
     display: block;
     height: 850px;
@@ -21,17 +21,23 @@
     background-attachment:fixed;
     
 }
+
 h1{
     font-size: 40px;
     color: white;
     font-family:'Bebas Neue', cursive;
-    padding-bottom: 250px;
 
 }   
 
   #requestForm {
     font-family: Arial, Helvetica, sans-serif;
+    width : 50%;
   }  
+
+  fieldset {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
   
   #requestForm h2 {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -39,9 +45,11 @@ h1{
     font-weight: bolder;
     font-style: inherit;
     font-stretch: ultra-expanded;
-    font-size: 28px;
+    font-size: 30px;
     color: #B91010;
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   input[type="text"],
   input[type="number"],
@@ -70,7 +78,34 @@ h1{
     background-color: #B91010;
   }
   .form-container {
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
     background-color: #F2F2F2;
     padding: 20px;
+  }
+
+  #cardsContainer{
+    background-color: rgb(206, 206, 206);
+    width: 30%;
+    display: inline-block;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    overflow:hidden;
+  }
+
+  .card {
+    background-color: brown;
+    width: 90%;
+    border: solid black 1px;
+    margin-top: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
   }

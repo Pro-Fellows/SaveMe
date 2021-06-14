@@ -127,7 +127,9 @@
         </div>
 
         <div class="questionBox">
+          
             <h2>Can't find an answer to a specific eligibility question?</h2>
+
             <button onclick="showForm()">ASK US A QUESTION</button>
            
             
@@ -148,25 +150,6 @@
         </div>
                 <fieldset>
 
-                    <label for="EnquiryField">Enquiry Type</label>
-                    <select name="enquiry" id="EnquiryField" required>
-                        <option value="none">Select</option>
-                        <option value="complaint">I have complaint</option>
-                        <option value="generalquestion">I have a general question</option>
-                        <option value="questioneligibility">I have a general question about my eligibility</option>
-                        <option value="suggestion">I have a suggestion</option>
-                    </select>
-                    <br>
-
-                    <label for="subjectField">Subject</label>
-                    <input type="text" id="subjectField">
-                    <br>
-
-                    <label for="EnquiryCaseField">Enquiry</label>
-                    <textarea name="" id="EnquiryCaseField" cols="40" rows="10" required></textarea>
-                    <input type="text" id="subjectField">
-                    <br>
-
                     <label for="FirstnameField">First Name</label>
                     <input type="text" id="FirstnameField" placeholder="Enter Your First Name" required>
                     <br>
@@ -185,15 +168,34 @@
 
 
 
+                    <label for="EnquiryField">Enquiry Type</label>
+                    <select name="enquiry" id="EnquiryField" required>
+                        <option value="none">Select</option>
+                        <option value="complaint">I have complaint</option>
+                        <option value="generalquestion">I have a general question</option>
+                        <option value="questioneligibility">I have a general question about my eligibility</option>
+                        <option value="suggestion">I have a suggestion</option>
+                    </select>
+                    <br>
+
+                    <label for="subjectField">Subject</label>
+                    <input type="text" id="subjectField">
+                    <br>
+
+                    <label for="EnquiryCaseField">Enquiry</label>
+                    <textarea name="" id="EnquiryCaseField" cols="40" rows="10" required></textarea>
+
+                    <br>
+
                     <input type="submit" value="Submit Your Enquiry">
 
                 </fieldset>
             </form>
+          
         </div>
         <div id="showQuestions">
+
         </div>
-
-
 
         
     </main>
@@ -246,5 +248,8 @@
 
 
 </body>
+
+
 </html>
+
 

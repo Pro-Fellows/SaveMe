@@ -2,17 +2,18 @@
 
 This is a blood donation platform.
 
-****
-Authors
+---
 
-* Abdelqader Al-Omari
+Collaborators
 
-* Osaid Alhomedy
+- Abdelqader Al-Omari
 
-* Mohammad Al-Khaleel
+- Osaid Alhomedy
 
-* Lamis Ghanayem
+- Mohammad Al-Khaleel
 
-* Ghadeer Khasawneh
+- Lamis Ghanayem
 
-* Sara Ziadat
+- Ghadeer Khasawneh
+
+- Sara Ziadat

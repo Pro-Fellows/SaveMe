@@ -3,7 +3,6 @@
 
 
 let quiz = document.getElementById('takeQuiz');
-let section = document.getElementById('sectionQuiz');
 let q1 = document.getElementById('q1');
 let y1 = document.getElementById('yfirst');
 let n1 = document.getElementById('nfirst');
@@ -46,7 +45,6 @@ function startQuiz(){
 
   q1.style.display = 'block';
   quiz.style.display = 'none';
-  section.style.display = 'block';
 
 }
 
@@ -55,7 +53,7 @@ function yesOne(){
   q1.style.display = 'none';
   swal('Sorry', 'You are not eligible', 'error');
   quiz.style.display = 'block';
-  section.style.display = 'none';
+
 
 }
 
@@ -71,7 +69,7 @@ function yesTwo (){
   q2.style.display = 'none';
   swal('Sorry', 'You are not eligible', 'error');
   quiz.style.display = 'block';
-  section.style.display = 'none';
+
 }
 
 function noTwo (){
@@ -85,7 +83,7 @@ function yesThree (){
   q3.style.display = 'none';
   swal('Sorry', 'You are not eligible', 'error');
   quiz.style.display = 'block';
-  section.style.display = 'none';
+
 }
 
 function noThree (){
@@ -98,7 +96,7 @@ function yesFour (){
   q4.style.display = 'none';
   swal('Sorry', 'You are not eligible', 'error');
   quiz.style.display = 'block';
-  section.style.display = 'none';
+
 }
 
 function noFour (){
@@ -112,7 +110,7 @@ function yesFive (){
   q5.style.display = 'none';
   swal('Sorry', 'You are not eligible', 'error');
   quiz.style.display = 'block';
-  section.style.display = 'none';
+
 }
 
 function noFive (){
@@ -126,14 +124,14 @@ function yesSix (){
   q6.style.display = 'none';
   swal('Sorry', 'You are not eligible', 'error');
   quiz.style.display = 'block';
-  section.style.display = 'none';
+
 }
 
 function noSix (){
   q6.style.display = 'none';
   swal('Congratulations!', 'You are  eligible', 'success');
   quiz.style.display = 'block';
-  section.style.display = 'none';
+
 }
 
 

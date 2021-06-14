@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 .mySlides {
   display: none;
+  width: 100%;
+  height: 800px;
+  margin-bottom: 200px;
 }
 .slideshow-container img {
   vertical-align: middle;
@@ -33,9 +39,9 @@
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 250px;
-  width: 265px;
-  margin: 20px;
+  height: 240px;
+  width: 260px;
+  margin:24.5px ;
   background-color: #E35046;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -48,8 +54,6 @@
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -57,9 +61,40 @@
 
 @keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0.2;
   }
   to {
     opacity: 1;
   }
+}
+
+
+.dot img {
+
+  width: 150px;
+  margin: 20px;
+  filter: invert() opacity(70%);
+}
+
+.dot h3 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 40px;
+  font-family:'Bebas Neue', cursive;
+
+  
+}
+
+
+.mySlides h4 {
+  font-size: 60px;
+  font-family:'Bebas Neue', cursive;
+  margin-top: 20px;
+  color: #144955;
+
+}
+
+.mySlides p {
+  font-size: 30px;
+  font-family: 'Roboto', cursive;
+  text-align: justify;
 }

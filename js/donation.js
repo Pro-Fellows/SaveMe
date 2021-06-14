@@ -6,6 +6,7 @@ let leaderBoardEl = document.getElementById('olElement');
 
 Donation.array = [];
 
+
 function Donation(name, age, gender, weight, city, address, bloodType, avail1, avail2, phone) { // Don't forget to change the variables as the form
 
   this.name = name;
@@ -29,7 +30,6 @@ if (localStorage.getItem('arrayDonors')) {
 }
 
 
-// console.log(Donation.array);
 
 
 
@@ -46,7 +46,7 @@ function submitHandling(event) {
   let address = event.target.address.value;
   let bloodType = event.target.bloodType.value;
   let avail1 = event.target.availability1.value;
-  let avail2 = event.target.availability1.value;
+  let avail2 = event.target.availability2.value;
   let mobile = event.target.mobileNumber.value;
 
 
@@ -75,6 +75,8 @@ function submitHandling(event) {
   }
 
   storeDonors();
+  leaderBoardFunction();
+  leaderBoardHandler();
 
 
 }
@@ -82,26 +84,48 @@ function submitHandling(event) {
 
 // We need to creat a new array, push all the objects from the Donation.array, sort the objects by frequency then use the function below
 
-// for(let n =0; n<Donation.array.length; )
+function leaderBoardFunction() {
 
-let leaderBoardArr = [ {'name':'Abdulqader','freque':8},{'name':'Sara','freque':2} ];
+  Donation.array.sort((b, a) => {
+    if (a.frequency > b.frequency) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
 
-function leaderBoardHandler() {
 
-  for (let k = 1; k <= 5; k++) {
-    let counter = `li:nth-child(${k})`;
-    let firstLiEl = leaderBoardEl.querySelector(counter);
-
-    let firstName = firstLiEl.querySelector('mark');
-    let counter2 = k-1;
-    firstName.textContent = leaderBoardArr[counter2].name;
-    let freq = firstLiEl.querySelector('small');
-    freq.textContent = leaderBoardArr[counter2].freque;
-
-  }
 }
 
+
+
+function leaderBoardHandler() {
+  
+
+  // let arrayOfStore = JSON.parse(localStorage.getItem('arrayDonors'));
+  for (let k = 1; k <= 5; k++) {
+    console.log(Donation.array);
+    let counter = `li:nth-child(${k})`; // this is used for the li selection.
+    let firstLiEl = leaderBoardEl.querySelector(counter);
+    let firstName = firstLiEl.querySelector('mark');
+    firstName.textContent = Donation.array[k - 1].name;
+    let freq = firstLiEl.querySelector('small');
+    freq.textContent = Donation.array[k - 1].frequency;
+  }
+
+
+}
+
+// if(!(Donation.array.length === k)){
+//   continue;
+// }
+
+leaderBoardFunction();
 leaderBoardHandler();
+
+
+
+
 
 
 

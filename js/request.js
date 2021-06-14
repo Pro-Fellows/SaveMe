@@ -1,3 +1,4 @@
+/* eslint-disable no-redeclare */
 'use strict';
 
 let formEl = document.getElementById('requestForm');

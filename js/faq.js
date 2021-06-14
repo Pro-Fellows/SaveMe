@@ -6,10 +6,7 @@
 let getForm = document.getElementById('EnquiryForm');
 let questionsCard = document.getElementById('showQuestions');
 let pEl = document.createElement('p');
-
-
 let enquiryArr = [];
-
 function showForm() {
     document.getElementById('EnquiryForm').style.display = 'block';
 }
@@ -26,9 +23,6 @@ function enquiryForm(firstName, lastName, email, mobileNumber, enquiryType, subj
     enquiryArr.push(this);
     setEnquiry();
 }
-
-
-
 getForm.addEventListener('submit', enquirySubmit);
 
 function enquirySubmit(event) {
@@ -47,9 +41,7 @@ function enquirySubmit(event) {
 }
 
 function setEnquiry() {
-
     let stringArray = JSON.stringify(enquiryArr);
-
     localStorage.setItem('EnquiryData', stringArray);
 }
 
@@ -81,3 +73,4 @@ function showQ() {
         console.log(questionsArr);
     }
 }
+

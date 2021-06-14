@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+  
+
+#requestDiv{
+    text-align: center;
+    background-image: url(../assets/requestBlood.jpg);
+    width: 100%;
+    display: block;
+    height: 850px;
+    background-size:cover;
+    background-color: rgba(76, 192, 147, 0.335);
+    background-blend-mode: overlay;
+    background-position:top;
+    padding-top: 250px;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    
+}
+h1{
+    font-size: 40px;
+    color: white;
+    font-family:'Bebas Neue', cursive;
+    padding-bottom: 250px;
+
+}   
+
+  #requestForm {
+    font-family: Arial, Helvetica, sans-serif;
+  }  
+  
+  #requestForm h2 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-style: inherit;
+    font-stretch: ultra-expanded;
+    font-size: 28px;
+    color: #B91010;
+    text-align: center;
+  }
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type="submit"] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #B91010;
+  }
+  .form-container {
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    padding: 20px;
+  }

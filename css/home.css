@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    
+    box-sizing: border-box;
+
+}
+
+#slogan {
+    text-align: center;
+    width: 100%;
+    display: block;
+    background-image: url(../assets/hero.jpg);
+    height: 850px;
+    background-position:top;
+    background-size:cover;
+    /* transform: translate(10px,-20px); */
+    background-attachment:fixed;
+    padding-top: 300px;
+    background-blend-mode:screen;
+
+}
+
+#slogan h1 {
+
+    font-size: 70px;
+    color: white;
+    font-family:'Bebas Neue', serif;
+    
+
+}
+
+
+#slogan section {
+    display: inline-block;
+    position: relative;
+    margin-top: 180px;
+}
+
+#slogan h3 {
+    font-size: 35px;
+    color:white ;
+    padding: 40px;
+    font-family:'Bebas Neue', serif;
+
+}
+
+#slogan button {
+    width: 250px;
+    height: 60px;
+    font-size: 30px;
+    color: white;
+    background-color: #E35046;
+    border-radius: 15px;
+    border-style: none;
+    padding:5px;
+    font-family:'Bebas Neue', serif;
+    
+}
+
+#slogan button:hover {
+    cursor: pointer;
+}
+
+#slogan button a {
+    text-decoration: none;
+    color: white;
+}
+
+#slogan div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.divv {
+
+    margin-top: 60px;
+
+}
+
+#slogan {
+    margin-top: 0;
+}

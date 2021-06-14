@@ -14,7 +14,7 @@
     height: 937px;
     background-size:cover;
     background-attachment:fixed;
-    box-shadow: 0px 5px 10px #b9b9b9;
+    box-shadow: 0px 2px 10px #b9b9b9;
     background-position-y:0px ;
 
 
@@ -45,20 +45,23 @@
 }
 
 #slogan button {
-    width: 250px;
-    height: 60px;
-    font-size: 30px;
+    width: 300px;
+    height: 80px;
+    font-size: 50px;
     color: white;
     background-color: #E35046;
-    border-radius: 15px;
     border-style: none;
-    padding:5px;
+    padding:8px;
     font-family:'Bebas Neue', serif;
+    margin-top: 70px;
+    transition: 0.6s ;
     
 }
 
 #slogan button:hover {
     cursor: pointer;
+    background-color: #144955;
+    
 }
 
 #slogan button a {
@@ -81,4 +84,40 @@
 
 #slogan {
     margin-top: 0;
+}
+
+
+#donarsCounter{
+    background-color: #E35046;
+    height: 500px;
+    font-family:'Bebas Neue', serif;
+    color:white ;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#donarsCounter h2{
+    font-size: 100px;
+    margin-bottom: -20px;
+}
+
+#donarsCounter h3{
+    font-size: 130px;
+    margin-bottom: -25px;
+}
+
+#donarsCounter h4{
+    font-size: 160px;
+}
+#donarsCounter h5{
+    font-size: 440px;
+    margin-left: 40px;
+}
+
+
+#howItWorks {
+    height: 600px;
 }

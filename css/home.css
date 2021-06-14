@@ -192,6 +192,7 @@
 
 #partners img{
     filter: grayscale();
+    height: 150px;
     transition: 0.6s;
 }
 

@@ -14,8 +14,8 @@
     height: 850px;
     background-position:top;
     background-size:cover;
-    /* transform: translate(10px,-20px); */
     background-attachment:fixed;
+    margin-top: 0px;
     padding-top: 490px;
     background-blend-mode:screen;
 
@@ -23,51 +23,96 @@
 
 #slogan h1 {
 
-    font-size: 70px;
-    color: white;
+    font-size: 60px;
+    color: #144955;
     font-family:'Bebas Neue', serif;
-    
-
 }
 
 
-#slogan section {
+#slogan section{
+    background-color: white;
+    width: 1200px;
+    height: 300px;
+    opacity: 0.7;   
     display: inline-block;
     position: relative;
     margin-top: 60px;
-    margin-left: 0px;
-    margin-right: 0px;
-    background: transparent;
+    color:#144955 ;
+    font-size: xx-large;
+    font-family:'Bebas Neue', serif;
+    font-weight: bold;
 } 
 
-
-#slogan h3 {
-    font-size: 35px;
-    color:white ;
-    padding: 40px;
+#eligInfo{
+    background-color: white;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
+    width: 1200px;
+    margin: auto;
+    height: 500px;
+}
+#eligInfo h1{
+    color: #144955;
+    text-align: center;
+    font-size: xx-large;
     font-family:'Bebas Neue', serif;
-
+    font-weight: bold;     
+}  
+#takeQuiz{
+    width: 18%;
+    height: 55px;
+    margin: 20px 0px 10px 350px;
+    border-radius: 10px;
+    background-color: #e35046;
+    color: white;
+    font-size: x-large;
+    font-family:'Bebas Neue', serif;
+    
+}
+#sectionQuiz{
+    background-color: white;
+    border: 10px solid rgb(252, 249, 249);
+    width: 60%;
+    height: 50%;
+    margin-left: 220px;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
 }
 
-
-
-
-
-
-
-#slogan div {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+.eQuest{
+    margin: 50px 0px 10px 100px;
+    font-size: x-large;
+    font-family:'Bebas Neue', serif;
+    color: #144955; 
+    
 }
-
-.divv {
-
-    margin-top: 60px;
-
+    
+.eQuest button{
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 35px;
+    width: 15%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #e35046;
+    color: white;
+    font-size: x-large;
+    font-family:'Bebas Neue', serif;
+    
 }
-
-#slogan {
-    margin-top: 0;
+#articles{
+    background-color: #e35046;
+    width: 1200px;
+    height: 400px;
+    margin: auto;
+}
+#reason{
+    background-color: white;
+    width: 1200px;
+    height: 400px;
+    margin: auto;
 }

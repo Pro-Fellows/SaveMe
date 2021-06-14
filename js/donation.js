@@ -46,7 +46,7 @@ function submitHandling(event) {
   let address = event.target.address.value;
   let bloodType = event.target.bloodType.value;
   let avail1 = event.target.availability1.value;
-  let avail2 = event.target.availability1.value;
+  let avail2 = event.target.availability2.value;
   let mobile = event.target.mobileNumber.value;
 
 

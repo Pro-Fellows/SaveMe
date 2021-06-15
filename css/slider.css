@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 .mySlides {
   display: none;
   width: 100%;
-  height: 800px;
+  height: auto;
   margin-bottom: 150px;
 }
 .slideshow-container img {
@@ -61,7 +62,7 @@
 
 @keyframes fade {
   from {
-    opacity: 0.2;
+    opacity: 0;
   }
   to {
     opacity: 1;
@@ -86,9 +87,11 @@
 
 
 .mySlides h4 {
-  font-size: 60px;
+  font-size: 55px;
+  letter-spacing: 1px;
   font-family:'Bebas Neue', cursive;
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-bottom: 5px;
   color: #144955;
 
 }

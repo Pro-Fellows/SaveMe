@@ -211,13 +211,14 @@
     margin-bottom: 100px;
     background-image: url("../assets/shareUs.png");
     background-clip: border-box;
+    /* background-size: cover;
+    background: no-repeat; */
 }
 
 #didYouKnow2 div{
 
     padding-top: 100px;
     padding-left: 41%;
-    transform: scale(1.5);
 
 }
 

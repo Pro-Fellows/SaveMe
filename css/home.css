@@ -314,4 +314,39 @@
     margin-top: 100px;
     height: 600px;
     stroke: white 3px;
+    border: none;
+}
+
+
+.whiteVert{
+    display: inline-block;
+    height: 700px;
+    width: 10px;
+    position: absolute;
+    background-color: white;
+    top: 70px;
+    left: 410px;
+}
+
+.whiteHorz{
+    display: inline-block;
+    position: absolute;
+    width: 1200px;
+    height: 10px;
+    background-color: white;
+    left: 380px;
+}
+
+#up {
+    top:100px;
+}
+#bottom{
+    bottom: 3px;
+}
+#right{
+    left:1480px ;
+}
+
+#videnwhiteSpace {
+    position: relative;
 }

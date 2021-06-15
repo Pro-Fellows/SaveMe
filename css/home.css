@@ -234,3 +234,53 @@
     width: 300px;
 }
 
+.story{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    border: solid ;
+    width: 60%;
+    margin:auto;
+    
+
+
+}
+
+.story img{
+
+    width:400px;
+    height: 400px;
+    
+
+}
+
+.story article{
+
+    
+    height: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+
+}
+
+.story article h2{
+
+    font-size: 40px;
+    margin-bottom: 20px;
+    width: 500px;
+    text-align: justify;
+    
+    
+
+}
+
+.story article p{
+
+    font-size: 20px;
+    width: 500px;
+    text-align: justify;
+
+}

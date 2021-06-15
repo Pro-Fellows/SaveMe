@@ -2,15 +2,19 @@
 
 
 header {
-    height: 0px;
-    font-size: 32px;
-    z-index: 20;
+    height: 130px;
+    position: sticky;
+    z-index: 50;
     top: 0px;
+    font-size: 32px;
+    background-color: #E35046;
+    box-shadow: 0px 0px 3px #000000;
 }
 
 header #logo{
-    width: 150px;
+    width: 140px;
     margin-left: 20px;
+    margin-top: -5px;
 }
 
 header ul{

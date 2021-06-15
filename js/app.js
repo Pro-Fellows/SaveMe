@@ -19,8 +19,9 @@ function grabDonors() {
 
 
 let videoElem = document.getElementById('v');
+let targetEl = document.getElementById('up');
 ScrollTrigger.create({
-  trigger: videoElem,
+  trigger: targetEl,
   onEnter: () => videoElem.play(),
   onEnterBack: () => videoElem.play(),
   onLeave: () => videoElem.pause(),

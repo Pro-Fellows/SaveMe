@@ -120,3 +120,63 @@ details summary {
   font-size: 16px;
 
 }
+
+#slogan {
+  text-align: center;
+  width: 100%;
+  display: block;
+  background-image: url(../assets/flow-1183490.jpg);
+  height: 750px;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 0px 4px 10px #b9b9b9;
+}
+
+#slogan h1 {
+  font-size: 70px;
+  color: white;
+  font-family: 'Bebas Neue', serif;
+}
+
+#slogan section {
+  display: inline-block;
+  position: relative;
+  margin-top: 400px;
+}
+
+#slogan h3 {
+  font-size: 35px;
+  color: white;
+  padding: 40px;
+  font-family: 'Bebas Neue', serif;
+}
+
+#slogan button {
+  width: 300px;
+  height: 80px;
+  font-size: 50px;
+  color: white;
+  background-color: #e35046;
+  border-style: none;
+  padding: 8px;
+  font-family: 'Bebas Neue', serif;
+  margin-top: 70px;
+  transition: 0.6s;
+}
+
+#slogan button:hover {
+  cursor: pointer;
+  background-color: #144955;
+}
+
+#slogan button a {
+  text-decoration: none;
+  color: white;
+}
+
+#slogan div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}

@@ -44,7 +44,7 @@ function handleSubmitting(event) {
   let newCase = event.target.caseField.value;
 
   new RequestBlood(newName, newAge, newGender, newCity, newNumber, newType, newUnits, newFreq, newCase);
-
+  console.log(newType);
   getDonorBlood(newType);
   getData();
 }

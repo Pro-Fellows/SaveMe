@@ -73,10 +73,25 @@
 
   </div>
 
+  <div id="bloodTable">
+    <h1 class="headline">General Informations</h1>
+    <img src="../assets/bloodTable.png" alt="">
+
+  </div>
+
+  <div class="seperator">
+
+  </div>
+
   <main>
 
   
         <div class="form-container">
+
+          <div id="cardsContainer">
+            <h1>Fill The Form to Show The Donors</h1>
+
+          </div>
 
             <form id="requestForm">
                 <fieldset>
@@ -116,7 +131,7 @@
                     <label for="phoneField">Phone Number</label>
                     <input type="tel" id="phoneField" placeholder="Enter Your Mobile Number" maxlength="10" required>
                     <br>
-                    <label for="bloodField">Required Blood Type</label>
+                    <label for="bloodField">Your Blood Type</label>
                     <select name="bloodType" id="bloodField" required>
                         <option value="none">Select</option>
                         <option value="A+">A+</option>
@@ -147,56 +162,50 @@
                 </fieldset>
             </form>
 
-
-            <div id="cardsContainer">
-
-            </div>
-
         </div>
       
     </main>
   
     <footer class="footer">
-      <div class="footerContainer">
-        <div class="row">
-          <div class="footer-col">
-            <img src="assets/LOOOOGOOO.png" alt="" />
-          </div>
-  
-          <div class="footer-col">
-            <h4>Save Me</h4>
-            <ul>
-              <li><a href="pages/aboutUs.html">About us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Follow us</h4>
-            <ul>
-              <li>
-                <a href="#">Facebook</a><img id="fbIcon" src="assets/facebook.png" alt="facebookIcon" />
-              </li>
-              <li>
-                <a href="#">Twitter</a>
-                <img id="twitterIcon" src="assets/twitter.png" alt="twitterIcon" />
-              </li>
-              <li>
-                <a href="#">Instagram</a>
-                <img id="instaIcon" src="assets/instagram.png" alt="instagramIcon" />
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Contact us</h4>
-            <ul>
-              <li>+962 (654) 3621</li>
-              <li>+962 (657) 4664</li>
-              <li>info@saveme.com</li>
-            </ul>
-          </div>
+      <div id="allcol">
+        <div id="firstcol">
+          <h2>About Us</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis dolorem aspernatur iste maiores mollitia
+            dolor commodi cupiditate praesentium expedita? Incidunt odio quae quod earum, officiis voluptatum consequuntur
+            repellat. Nihil, perferendis!</p>
+        </div>
+        <div id="secondcol">
+          <h2>Links</h2>
+          <ul>
+            <il><a href="pages/aboutUs.html">About us</a></il>
+            <il><a href="#">Privacy Policy</a></il>
+            <il><a href="pages/faq.html">FAQ</a></il>
+          </ul>
+        </div>
+        <div id="thirdcol">
+          <h2>Contacts</h2>
+          <ul>
+            <li>+962 (654) 3621</li>
+            <li>+962 (657) 4664</li>
+            <li>info@saveme.com</li>
+          </ul>
         </div>
       </div>
+      <hr>
+      <div id="last">
+        <div id="copy">
+          <p>Copyright &copy; 2021 All Rights Reserved by SaveMe.</p>
+        </div>
+        <div id="icons">
+          <ul class="social-icons"> 
+            <li><img src="../assets/facebook.png" alt=""></li>
+            <li><img src="../assets/twitter.png" alt=""></li>
+            <li><img src="../assets/instagram.png" alt=""></li>
+          </ul>
+        </div>
+  
+      </div>
+      
     </footer>
 
 

@@ -63,24 +63,14 @@
     background-color:#144955 ;
   }
 
-
-
-
-#requestDiv{
+  .headline {
+    font-size: 100px;
     text-align: center;
-    background-image: url(../img/Blood-Donor.jpg);
-    width: 100%;
-    display: block;
-    height: 850px;
-    background-size:cover;
-    background-color: rgba(76, 192, 147, 0.335);
-    background-blend-mode: overlay;
-    background-position:top;
-    padding-top: 250px;
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    
-}
+    margin: 50px;
+    font-family: "Bebas Neue", cursive;
+    color: #144955;
+  }
+
 
 h1{
     font-size: 40px;
@@ -139,26 +129,37 @@ h1{
   }
   .form-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items:flex-start;
+    align-items:center;
     background-color: #F2F2F2;
     padding: 20px;
   }
 
   #cardsContainer{
-    background-color: rgb(206, 206, 206);
-    width: 30%;
-    display: inline-block;
-    display: flex;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0px 0px 10px #b9b9b9;
+    width: 100%;
+    height: 300px;
+    /* display: flex;
     justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    overflow:hidden;
+    flex-direction: row;
+    align-items: center; */
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-bottom: 100px;
+    overflow-x:hidden;
+  }
+
+  #cardsContainer h1{
+    color: #144955;
+    text-align: center;
+    margin-top: 20px;
   }
 
   .card {
     background-color: brown;
-    width: 90%;
+    width: 25%;
     border: solid black 1px;
     margin-top: 20px;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -168,4 +169,10 @@ h1{
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 20px;
+    display: inline-block;
+  }
+
+  #bloodTable{
+    text-align: center;
+    margin-bottom: 100px;
   }

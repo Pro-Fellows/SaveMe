@@ -1,15 +1,15 @@
-/* eslint-disable no-undef */
-/* eslint-disable indent */
-/* eslint-disable no-unused-vars */
-'user strict';
 
+/* eslint-disable no-unused-vars */
+/* eslint-disable eol-last */
+/* eslint-disable indent */
+'user strict';
 let getForm = document.getElementById('EnquiryForm');
 let questionsCard = document.getElementById('showQuestions');
-let pEl = document.createElement('p');
 let enquiryArr = [];
 function showForm() {
     document.getElementById('EnquiryForm').style.display = 'block';
 }
+
 
 function enquiryForm(firstName, lastName, email, mobileNumber, enquiryType, subject, enquiryCase) {
     this.firstName = firstName;
@@ -23,6 +23,11 @@ function enquiryForm(firstName, lastName, email, mobileNumber, enquiryType, subj
     enquiryArr.push(this);
     setEnquiry();
 }
+
+getEnquiry();
+
+
+
 getForm.addEventListener('submit', enquirySubmit);
 
 function enquirySubmit(event) {
@@ -37,6 +42,8 @@ function enquirySubmit(event) {
 
     new enquiryForm(newFirstName, newLastName, newemail, newmobile, newenquiryType, newsubject, newenquiryCase);
     getEnquiry();
+    console.log(enquiryArr);
+
     showQ();
 }
 
@@ -52,25 +59,51 @@ function getEnquiry() {
     }
 }
 
+
 function showQ() {
+
     document.getElementById('EnquiryForm').style.display = 'none';
-    let questionsArr = [];
+    // let questionsArr = [];
+    // if (localStorage.getItem('QuestionData')) {
+    //     questionsArr = JSON.parse(localStorage.getItem('QuestionData'));
     // eslint-disable-next-line no-empty
+    let hEl = document.createElement('h2');
+    let pEl2 = document.createElement('p');
     for (let i = 0; i < enquiryArr.length; i++) {
+        // let objectsQuestions = {
+        //     firstName: enquiryArr[i].firstName,
+        //     lastName: enquiryArr[i].lastName,
+        //     case: enquiryArr[i].enquiryCase
+        // };
+        // questionsArr.push(objectsQuestions);
+        // localStorage.setItem('QuestionData', JSON.stringify(questionsArr));
 
-        let objectsQuestions = {
-            firstName: enquiryArr[i].firstName,
-            lastName: enquiryArr[i].lastName,
-            case: enquiryArr[i].enquiryCase
-        };
-        questionsArr.push(objectsQuestions);
-        //     for(let j = 0; j<=contentArray.length; j++){
-        questionsCard.textContent = ` ${enquiryArr[i].firstName} ${enquiryArr[i].lastName} asked:`;
-        questionsCard.appendChild(pEl);
-        pEl.textContent = `${enquiryArr[i].enquiryCase}`;
+        hEl;
+        if (hEl.textContent === ` ${enquiryArr[i].firstName} ${enquiryArr[i].lastName} asked:`) {
+            continue;
+        }
+        hEl.textContent = ` ${enquiryArr[i].firstName} ${enquiryArr[i].lastName} asked:`;
+        questionsCard.appendChild(hEl);
+        pEl2;
+        if (pEl2.textContent === `${enquiryArr[i].enquiryCase}`) {
+            continue;
+        }
+        questionsCard.appendChild(pEl2);
+        pEl2.textContent = `${enquiryArr[i].enquiryCase}`;
 
-        // }
-        console.log(questionsArr);
     }
 }
 
+function showQ2() {
+    document.getElementById('EnquiryForm').style.display = 'none';
+    for (let i = 0; i < enquiryArr.length; i++) {
+        let hEl = document.createElement('h2');
+        hEl.textContent = ` ${enquiryArr[i].firstName} ${enquiryArr[i].lastName} asked:`;
+        questionsCard.appendChild(hEl);
+        let pEl2 = document.createElement('p');
+        questionsCard.appendChild(pEl2);
+        pEl2.textContent = `${enquiryArr[i].enquiryCase}`;
+    }
+}
+
+showQ2();

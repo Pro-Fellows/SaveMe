@@ -1,29 +1,41 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
 * {
   box-sizing: border-box;
+  
 }
+
+/* #topImage{
+  width: 50%;
+  text-align: center;
+  margin: 40px;
+} */
 
 #ourMission {
   display: block;
-  background-image: url(../img/abouUs.jpg);
+  /* background-image: url(../img/abouUs.jpg);  */
   width: 100%;
-  height: 600px;
-  background-position: top;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 500px;
   padding-top: 230px;
-  background-blend-mode: screen;
-  background-attachment: fixed;
-}
+  font-family: "Rubik";
+
+} 
+
+
+
+
+
 #ourVision {
   display: block;
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), #e35046);
+  /* background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), #e35046); */
   width: 100%;
   height: 500px;
   padding-top: 80px;
 }
+
+
 #ourTeam {
   background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), #e35046);
   height: 500px;

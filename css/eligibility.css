@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+* {
+    
+    box-sizing: border-box;
+}
+
+#slogan {
+    text-align: center;
+    width: 100%;
+    display: block;
+    background-image: url(../img/give-smile.jpeg);
+    height: 850px;
+    background-position-y:-200px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    margin-top: 0px;
+    padding-top: 490px;
+    background-blend-mode:screen;
+}
+
+#slogan h1 {
+    font-size: 60px;
+    color:  #07353f; 
+    font-family:'Bebas Neue', serif;
+}
+
+#slogan section{
+    background-color: white;
+    width: 90%;
+    height: 300px;
+    opacity: 0.7;   
+    display: inline-block;
+    position: relative;
+    margin-top: 100px;
+    color: #07353f; 
+    font-size: xx-large;
+    font-family: 'Roboto', cursive;
+    font-weight: bold;
+    line-height: 1.2;   
+    
+} 
+
+#eligInfo{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    height: 650px;    
+}
+#newDiv{
+    width:55%
+}
+
+#eligInfo h1{
+    color: #144955;
+
+    font-size: 35px;
+    font-family:'Bebas Neue', serif;
+    text-align: justify; 
+
+    line-height: 1.7;       
+}  
+
+#eligInfo p{
+    color: #144955;
+
+    font-size: large;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+
+        
+}  
+#takeQuiz{
+    width: 50%;
+    height: 55px;
+    margin: 60px 130px 10px 130px;
+    background-color: #e35046;
+    border: none;
+
+    color: white;
+    font-size: x-large;
+    font-family:'Bebas Neue', serif;
+    
+}
+#sectionQuiz{
+    background-color: white;
+    box-shadow: 0px 0px 15px #B9B9B9;
+    text-align: center;
+    width: 75%;
+    height: 240px;
+    margin-top: 100px;
+    margin-left: 75px;
+}
+#sectionQuiz h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #e35046;
+}
+
+.eQuest h2{
+    margin: 35px 0px 10px 50px;
+    font-size: 35px;
+    font-family:'Bebas Neue', serif; 
+    margin-right: 50px;
+    color: #144955; 
+}   
+.eQuest button{
+    margin-top: 10px;
+    width: 15%;
+    height: 35px;
+    background-color: #e35046;
+    border: none;
+    color: white;
+    font-size: x-large;
+    font-family:'Bebas Neue', serif;
+}
+
+
+
+#container{
+
+    width: 90%;
+    height: 800px;
+    margin: auto;
+    background-color: white;
+    margin-top: 60px;
+    
+}  
+
+.title1{
+    background-color:  #144955; 
+    width: 100%;
+    height: 120px;
+    color: white;
+    
+}
+
+
+#container h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+
+    font-family: 'Roboto', cursive;
+        
+
+}
+#container h2{
+    text-align: center;
+    font-size: 20px;
+
+    font-weight: bold; 
+    font-family: 'Roboto', cursive;
+     
+}
+#incontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 90px;    
+}
+
+.uniteclass {
+    box-shadow: 5px 10px 15px #B9B9B9;
+
+}
+
+#left h1{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+
+    
+}
+#left p{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: justify;  
+    line-height: 1.5;  
+    margin-left: 10px;
+    margin-right: 10px; 
+    
+}
+.uniteclass a{
+    text-decoration: none;
+    margin-left: 70px;
+   
+}
+
+#mid h1{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
+#mid p{
+    font-size: 15px;
+
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+    text-align: justify;  
+    line-height: 1.5;  
+    margin-left: 10px;
+    margin-right: 10px;
+    
+
+}
+
+#right h1{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
+#right p{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+    text-align: justify;  
+    line-height: 1.5;  
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+#last1 h1{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+
+}
+#last1 p{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+    text-align: center;   
+    text-align: justify;  
+    line-height: 1.5;  
+    margin-left: 10px;
+    margin-right: 10px; 
+
+}
+#faqs{
+  
+    background-color: white;
+
+    width: 90%;
+    height: 700px;
+    margin:auto;
+    margin-top: 60px;
+    
+}
+.title2{
+    background-color: #144955; 
+    width: 100%;
+    height: 120px;
+    margin-bottom: 60px;  
+    
+}
+
+.title2 h1{
+    color: white;
+    font-family: 'Roboto', cursive;
+   
+}
+#faqs h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.collapsible {
+  
+    background-color: #e35046;
+    color:black;
+    cursor: pointer;
+    padding: 18px;
+    width: 70%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    margin-left: 200px;
+    box-shadow: 2px 5px 15px grey;
+  
+}
+  
+  .active, .collapsible:hover {
+    
+    background-color: #e93c30;
+
+}
+  
+  .collapsible:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+   
+}
+  
+.active:after {
+    content: "\2212";
+    
+}
+.content {
+    padding: 0px 18px;
+    max-height: 0; 
+    overflow: hidden;
+    font-size: 18px;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    margin-left: 200px;
+    width: 70%;
+}
+.content p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.collapsible:nth-of-type(2n){
+    background-color: white; 
+
+}
+
+.collapsible:nth-of-type(2n):hover{
+
+    background-color: rgb(238, 234, 234); 
+
+}
+
+
+#containerBlood {
+    height: 370px;
+    margin: 0 auto;
+    overflow: hidden;
+    left: 200px;
+    width: 248px;
+  }
+  
+  #containerBlood div { position: absolute; }
+  
+  .pour {
+    position: absolute;
+    left: 42%;
+    width: 20px;
+    height: 0px;
+    background-color: #e74c3c;
+    border-radius: 10px
+  }
+  
+  .pourTube {
+    position: absolute;
+    left: 42%;
+    width: 20px;
+    height: 0px;
+    background-color: rgb(211, 211, 211);
+    background-color: rgba(211, 211, 211, 0.1);
+    border-radius: 10px;
+    border-color: rgba(211, 211, 211, 0.9);
+    border-style: solid;
+    border-bottom: 0px;
+  }
+  
+  #beaker {
+    border: 10px solid #D3D3D3;
+    border-top: 0;
+    border-radius: 0 0 30px 30px;
+    height: 200px;
+    left: 14px;
+    bottom: 0;
+    width: 200px;
+  }
+  
+  #plastic {
+    background-color: rgb(211, 211, 211);
+    background-color: rgba(211, 211, 211, 0.1);
+    bottom: 0;
+    height: 220px;
+    overflow: hidden;
+    width: 100%;
+    z-index: 9;
+  }
+  
+  #beaker:before {
+    border: 10px solid #D3D3D3;
+    border-bottom: 0;
+    border-right: 0;
+    border-radius: 14px 0px 0 0;
+    content: '';
+    height: 30px;
+    position: absolute;
+    top: -30px;
+    width: 90px;
+  }
+  
+  #beaker:after {
+    border: 10px solid #D3D3D3;
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: 0px 14px 0 0;
+    content: '';
+    height: 30px;
+    position: absolute;
+    top: -30px;
+    width: 90px;
+  }
+  
+  #beaker:before { left: -10px; }
+  #beaker:after { right: -10px; }
+  
+  #liquid {
+    background-color: #e74c3c;
+    border: 10px solid #e74c3c;
+    border-radius: 0 0 20px 20px;
+    bottom: 0;
+    height: 0px;
+    overflow: hidden;
+    width: 180px;
+  }
+  
+  #liquid:after {
+    background-color: rgba(255, 255, 255, 0.25);
+    bottom: -10px;
+    content: '';
+    height: 200px;
+    left: -40px;
+    position: absolute;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(15deg);
+    width: 110px;
+  }
+  
+  #liquid .bubble {
+    -webkit-animation-name: bubble;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    background-color: rgba(255, 255, 255, 0.2);
+    bottom: 0;
+    border-radius: 10px;
+    height: 20px;
+    width: 20px;
+  }
+  
+  @-webkit-keyframes bubble {
+    0% { bottom: 0; }
+  
+     50% {
+       background-color: rgba(255, 255, 255, 0.2);
+        bottom: 80px;
+     }
+  
+     100% {
+       background-color: rgba(255, 255, 255, 0);
+        bottom: 160px;
+     }
+  }
+  
+  .bubble1 {
+    left: 10px;
+    -webkit-animation-delay: 1000ms;
+    -webkit-animation-duration: 10000ms;
+  }
+  
+  .bubble2 {
+    left: 50px;
+    -webkit-animation-delay: 700ms;
+    -webkit-animation-duration: 11000ms;
+  }
+  
+  .bubble3 {
+    left: 100px;
+    -webkit-animation-delay: 1200ms;
+    -webkit-animation-duration: 13000ms;
+  }
+  
+  .bubble4 {
+    left: 130px;
+    -webkit-animation-delay: 1100ms;
+    -webkit-animation-duration: 7000ms;
+  }
+  
+  .bubble5 {
+    left: 170px;
+    -webkit-animation-delay: 1300ms;
+    -webkit-animation-duration: 8000ms;
+  }
+  .drop{
+    position: relative;
+    top: -16px;
+    left: 46%;
+    width: 20px;
+    height: 20px;
+    margin-left: -1px;
+    border-radius: 50%;
+    background: #e74c3c;
+    z-index: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    -webkit-border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+    border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    -webkit-transform: rotateZ(-45deg)   ;
+    transform: rotateZ(-45deg)   ;
+  }
+
+  .firstDrop{
+    animation: dropAni 1s 15;
+  }
+  
+  .secondDrop{
+    animation: dropAni 0.8s 2s 15;
+  }
+  
+  .thirdDrop{
+    animation: dropAni 0.6s 6s 15;
+  }
+  
+  @keyframes dropAni{
+    0%{
+      top: 0px;
+    }
+    100%{
+      top: 170px;
+    }
+  }
+
+
+#animation{
+    position: relative;
+    margin-top: 130px;
+    margin-left: 50px;
+
+
+  }

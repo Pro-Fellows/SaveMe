@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*
+ * Reference - https://codepen.io/supah/pen/WwrJpw
+ */
+
+/* basic */
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+/* container */
+#leaderboardContiner{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 30px;
+}
+.container {
+	width: 39%;
+	height: auto;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+	z-index: 1;
+	overflow: hidden;
+	font-family:'Bebas Neue', cursive;
+}
+
+/* leaderboard */
+.leaderboard {
+	background: #144955;
+}
+
+/* head */
+.leaderboard .head {
+	padding: 20px 16px;
+	color: rgb(253, 253, 253);
+	font-size: 60px;
+	text-align: center;
+}
+.leaderboard .head h1 {
+	display: inline-block;
+	margin-left: 4px;
+}
+
+/* body */
+.leaderboard .body {
+	color: snow;
+	font-size: 16px;
+}
+.leaderboard ol {
+	counter-reset: number; 
+	padding-inline-start: 0px;
+}
+.leaderboard li {
+	padding: 16px;
+	display: flex;
+}
+.leaderboard li mark {
+	flex-grow: 1;
+	color: snow;
+	font-size: 30px;
+	background-color: transparent;
+}
+
+.leaderboard li small {
+	color: snow;
+	font-size: 30px;
+	padding-right: 20px;
+	background-color: transparent;
+}
+/* .leaderboard li:before {
+	counter-increment: number; 
+	content: counter(number) "."; 
+	margin-right: 4px;
+} */
+.leaderboard li:nth-child(1) {
+	background: #fa6855;
+}
+.leaderboard li:nth-child(2) {
+	background: #e0574f;
+}
+.leaderboard li:nth-child(3) {
+	background: #d7514d;
+}
+.leaderboard li:nth-child(4) {
+	background: #cd4b4b;
+}
+.leaderboard li:nth-child(5) {
+	background: #c24448;
+}

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+.mySlides {
+  display: none;
+  width: 100%;
+  height: auto;
+  margin-bottom: 150px;
+}
+.slideshow-container img {
+  vertical-align: middle;
+  height: 600px;
+  
+}
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 240px;
+  width: 260px;
+  margin:24.5px ;
+  background-color: #E35046;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #144955;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.dot img {
+
+  width: 150px;
+  margin: 20px;
+  filter: invert() opacity(70%);
+}
+
+.dot h3 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 40px;
+  font-family:'Bebas Neue', cursive;
+
+  
+}
+
+
+.mySlides h4 {
+  font-size: 55px;
+  letter-spacing: 1px;
+  font-family:'Bebas Neue', cursive;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  color: #144955;
+
+}
+
+.mySlides p {
+  font-size: 30px;
+  font-family: 'Roboto', cursive;
+  text-align: justify;
+}

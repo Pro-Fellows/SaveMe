@@ -1,3 +1,4 @@
+
 /* eslint-disable no-unused-vars */
 /* eslint-disable eol-last */
 /* eslint-disable indent */
@@ -8,6 +9,8 @@ let enquiryArr = [];
 function showForm() {
     document.getElementById('EnquiryForm').style.display = 'block';
 }
+
+
 function enquiryForm(firstName, lastName, email, mobileNumber, enquiryType, subject, enquiryCase) {
     this.firstName = firstName;
     this.lastName = lastName;
@@ -16,6 +19,7 @@ function enquiryForm(firstName, lastName, email, mobileNumber, enquiryType, subj
     this.enquiryType = enquiryType;
     this.subject = subject;
     this.enquiryCase = enquiryCase;
+
     enquiryArr.push(this);
     setEnquiry();
 }
@@ -25,6 +29,7 @@ getEnquiry();
 
 
 getForm.addEventListener('submit', enquirySubmit);
+
 function enquirySubmit(event) {
     event.preventDefault();
     let newFirstName = event.target.FirstnameField.value;
@@ -34,9 +39,11 @@ function enquirySubmit(event) {
     let newenquiryType = event.target.EnquiryField.value;
     let newsubject = event.target.subjectField.value;
     let newenquiryCase = event.target.EnquiryCaseField.value;
+
     new enquiryForm(newFirstName, newLastName, newemail, newmobile, newenquiryType, newsubject, newenquiryCase);
     getEnquiry();
     console.log(enquiryArr);
+
     showQ();
 }
 
@@ -44,12 +51,15 @@ function setEnquiry() {
     let stringArray = JSON.stringify(enquiryArr);
     localStorage.setItem('EnquiryData', stringArray);
 }
+
 function getEnquiry() {
     let values = localStorage.getItem('EnquiryData');
     if (values) {
         enquiryArr = JSON.parse(values);
     }
 }
+
+
 function showQ() {
 
     document.getElementById('EnquiryForm').style.display = 'none';

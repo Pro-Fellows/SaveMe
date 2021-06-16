@@ -103,7 +103,7 @@ h1{
     font-family:'Bebas Neue', cursive;
     font-style: inherit;
     font-stretch: ultra-expanded;
-    font-size: 50px;
+    font-size: 80px;
     color: #E35046;
     text-align: center;
     margin-bottom: 40px;
@@ -128,7 +128,6 @@ h1{
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
   }
   input[type="submit"]:hover {
@@ -143,6 +142,25 @@ h1{
     padding-top: 30px;
   }
 
+
+  #chartContainer {
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .headlinee {
+    font-family:'Bebas Neue', cursive;
+    color: #144955;
+    font-size: 80px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+
+  }
+
+
   #cardsContainer{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 10px #b9b9b9;
@@ -151,7 +169,7 @@ h1{
     padding-right: 30px;
     padding-left: 30px;
     margin-bottom: 50px;
-    margin-top: 40px;
+    margin-top: 0px;
     overflow-x:hidden;
   }
 
@@ -183,6 +201,27 @@ h1{
   }
 
   #bloodTable{
+    margin-bottom: -10px;
     text-align: center;
-    margin-bottom: 100px;
+    position: relative;
+    z-index: 1;
+  }
+  #bloodTable img{
+    width: 50%;
+
+  }
+  #toThere{
+    position: relative;
+    z-index: 2;
+  }
+
+
+  #submitButon{
+    width: 100%;
+    font-size: 30px;
+    background-color: #144955;
+    border-radius: none;
+  }
+  #submitButon:hover{
+        background-color:#E35046;
   }

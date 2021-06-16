@@ -131,6 +131,28 @@ function renderCards(array) {
 
 
 
+let ctx = document.getElementById('myChart');
+let myChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: ['O+', 'A+', 'B+', 'AB+', 'O-', 'A-', 'B-', 'AB-'],
+    datasets: [{
+      label: 'Blood Types',
+      data: [33.03, 32.86, 16.56, 6.28, 4.4, 3.97, 2.06, 0.84],
+      backgroundColor: [
+        '#66000D',
+        '#990014',
+        '#CC001B',
+        '#f02',
+        '#FF334E',
+        '#FF667A',
+        '#FF99A6',
+        '#FEE2E6',
+      ],
+    }]
+  },
+});
+
 
 
 

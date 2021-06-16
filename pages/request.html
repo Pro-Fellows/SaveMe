@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Request Blood</title>
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/request.css">
+  <meta charset="UTF-8">
+  <title>Request Blood</title>
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/request.css">
 </head>
 
 <body>
@@ -46,7 +46,7 @@
           <g />
           <g />
         </svg>
-         Scroll to the form 
+        Scroll to the form
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           enable-background="new 0 0 32 32" height="32px" id="Слой_1" version="1.1" viewBox="0 0 32 32" width="32px"
           xml:space="preserve">
@@ -73,8 +73,15 @@
 
   </div>
 
+  <h2 class="headlinee">Blood Types Distribution In Jordan</h2>
+  <div id="chartContainer" style="width: 40%;">
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <h2 class="headlinee">Blood Type Compatibility</h2>
+
   <div id="bloodTable">
-    <h1 class="headline">General Informations</h1>
+    
     <img src="../assets/bloodTable.png" alt="">
 
   </div>
@@ -85,133 +92,134 @@
 
   <main>
 
-  
-        <div class="form-container">
 
-          <div id="cardsContainer">
-            <h1>Fill The Form to Show The Donors</h1>
+    <div class="form-container">
 
-          </div>
+      <form id="requestForm">
 
-            <form id="requestForm">
-              
-              <h2>Blood Request Form</h2>
+        <h2>Blood Request Form</h2>
 
-                <fieldset>
-                    
-                    <label for="nameField">Full Name</label>
-                    <input type="text" id="nameField" placeholder="Enter Your Full Name" required>
-                    <br>
-                    <label for="ageField">Age</label>
-                    <input type="number" id="ageField" min="1" max="100">
-                    <br>
-                    <label for="genderField">Gender</label>
-                    <select name="gender" id="genderField">
+        <fieldset>
 
-                       <option value="none">Select</option>
-                       <option value="male">Male</option>
-                       <option value="female">Female</option>
+          <label for="nameField">Full Name</label>
+          <input type="text" id="nameField" placeholder="Enter Your Full Name" required>
+          <br>
+          <label for="ageField">Age</label>
+          <input type="number" id="ageField" min="1" max="100">
+          <br>
+          <label for="genderField">Gender</label>
+          <select name="gender" id="genderField">
 
-                    </select>
-                    <br>
-                    <label for="cityField">City</label>
-                    <select name="city" id="cityField">
-                        <option value="none">Select</option>
-                        <option value="amman">Amman</option>
-                        <option value="irbid">Irbid</option>
-                        <option value="zarqa">Zarqa</option>
-                        <option value="balqa'">Blaqa'</option>
-                        <option value="jerash">Jerash</option>
-                        <option value="ajloun">Ajloun</option>
-                        <option value="mafraq">Mafraq</option>
-                        <option value="madaba">Madaba</option>
-                        <option value="kerak">Kerak</option>
-                        <option value="tafila">Tafila</option>
-                        <option value="ma'an">Ma'an</option>
-                        <option value="aqaba">Aqaba</option>
-                    </select>
-                    <br>
-                    <label for="phoneField">Phone Number</label>
-                    <input type="tel" id="phoneField" placeholder="Enter Your Mobile Number" maxlength="10" required>
-                    <br>
-                    <label for="bloodField">Your Blood Type</label>
-                    <select name="bloodType" id="bloodField" required>
-                        <option value="none">Select</option>
-                        <option value="A+">A+</option>
-                        <option value="A-">A-</option>
-                        <option value="AB+">AB+</option>
-                        <option value="AB-">AB-</option>
-                        <option value="B+">B+</option>
-                        <option value="B-">B-</option>
-                        <option value="O+">O+</option>
-                        <option value="O-">O-</option>
-                    </select>
-                    <br>
-                    <label for="unitsField">Required Blood Units</label>
-                    <input type="number" id="unitsField" min="1" required>
-                    <br>
-                    <label for="frequencyField">Frequency Of Request</label>
-                    <select name="frequency" id="frequencyField" required>
-                        <option value="none">Select</option>
-                        <option value="oneTime">One Time</option>
-                        <option value="frequent">Frequent</option>
-                    </select>
-                    <br>
-                    <label for="caseField">Case Status (Optional)</label><br>
-                    <textarea name="" id="caseField" cols="40" rows="10"></textarea>
-                    <br>
-                    <input type="submit" value="Submit">
+            <option value="none">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
 
-                </fieldset>
-            </form>
+          </select>
+          <br>
+          <label for="cityField">City</label>
+          <select name="city" id="cityField">
+            <option value="none">Select</option>
+            <option value="amman">Amman</option>
+            <option value="irbid">Irbid</option>
+            <option value="zarqa">Zarqa</option>
+            <option value="balqa'">Blaqa'</option>
+            <option value="jerash">Jerash</option>
+            <option value="ajloun">Ajloun</option>
+            <option value="mafraq">Mafraq</option>
+            <option value="madaba">Madaba</option>
+            <option value="kerak">Kerak</option>
+            <option value="tafila">Tafila</option>
+            <option value="ma'an">Ma'an</option>
+            <option value="aqaba">Aqaba</option>
+          </select>
+          <br>
+          <label for="phoneField">Phone Number</label>
+          <input type="tel" id="phoneField" placeholder="Enter Your Mobile Number" maxlength="10" required>
+          <br>
+          <label for="bloodField">Your Blood Type</label>
+          <select name="bloodType" id="bloodField" required>
+            <option value="none">Select</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+          </select>
+          <br>
+          <label for="unitsField">Required Blood Units</label>
+          <input type="number" id="unitsField" min="1" required>
+          <br>
+          <label for="frequencyField">Frequency Of Request</label>
+          <select name="frequency" id="frequencyField" required>
+            <option value="none">Select</option>
+            <option value="oneTime">One Time</option>
+            <option value="frequent">Frequent</option>
+          </select>
+          <br>
+          <label for="caseField">Case Status (Optional)</label><br>
+          <textarea name="" id="caseField" cols="40" rows="10"></textarea>
+          <br>
+          <input id="submitButon" type="submit" value="Submit">
 
-        </div>
-      
-    </main>
-  
-    <footer class="footer">
-      <div id="allcol">
-        <div id="firstcol">
-          <h2>About Us</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis dolorem aspernatur iste maiores mollitia
-            dolor commodi cupiditate praesentium expedita? Incidunt odio quae quod earum, officiis voluptatum consequuntur
-            repellat. Nihil, perferendis!</p>
-        </div>
-        <div id="secondcol">
-          <h2>Links</h2>
-          <ul>
-            <il><a href="pages/aboutUs.html">About us</a></il>
-            <il><a href="#">Privacy Policy</a></il>
-            <il><a href="pages/faq.html">FAQ</a></il>
-          </ul>
-        </div>
-        <div id="thirdcol">
-          <h2>Contacts</h2>
-          <ul>
-            <li>+962 (654) 3621</li>
-            <li>+962 (657) 4664</li>
-            <li>info@saveme.com</li>
-          </ul>
-        </div>
+        </fieldset>
+      </form>
+
+      <div id="cardsContainer">
+        <h1>List of the available Donors</h1>
+
       </div>
-      <hr>
-      <div id="last">
-        <div id="copy">
-          <p>Copyright &copy; 2021 All Rights Reserved by SaveMe.</p>
-        </div>
-        <div id="icons">
-          <ul class="social-icons"> 
-            <li><img src="../assets/facebook.png" alt=""></li>
-            <li><img src="../assets/twitter.png" alt=""></li>
-            <li><img src="../assets/instagram.png" alt=""></li>
-          </ul>
-        </div>
-  
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div id="allcol">
+      <div id="firstcol">
+        <h2>About Us</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis dolorem aspernatur iste maiores mollitia
+          dolor commodi cupiditate praesentium expedita? Incidunt odio quae quod earum, officiis voluptatum consequuntur
+          repellat. Nihil, perferendis!</p>
       </div>
-      
-    </footer>
+      <div id="secondcol">
+        <h2>Links</h2>
+        <ul>
+          <il><a href="pages/aboutUs.html">About us</a></il>
+          <il><a href="#">Privacy Policy</a></il>
+          <il><a href="pages/faq.html">FAQ</a></il>
+        </ul>
+      </div>
+      <div id="thirdcol">
+        <h2>Contacts</h2>
+        <ul>
+          <li>+962 (654) 3621</li>
+          <li>+962 (657) 4664</li>
+          <li>info@saveme.com</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div id="last">
+      <div id="copy">
+        <p>Copyright &copy; 2021 All Rights Reserved by SaveMe.</p>
+      </div>
+      <div id="icons">
+        <ul class="social-icons">
+          <li><img src="../assets/facebook.png" alt=""></li>
+          <li><img src="../assets/twitter.png" alt=""></li>
+          <li><img src="../assets/instagram.png" alt=""></li>
+        </ul>
+      </div>
 
+    </div>
 
-    <script src="../js/request.js"></script>
-  </body>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../js/request.js"></script>
+</body>
+
 </html>

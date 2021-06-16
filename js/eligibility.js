@@ -47,7 +47,6 @@ function startQuiz(){
 
   q1.style.display = 'block';
   quiz.style.display = 'none';
- 
 
 }
 
@@ -56,7 +55,7 @@ function yesOne(){
   q1.style.display = 'none';
   swal('Sorry! You are not eligible!', 'You should be above 18 years old, in order to be eligible.', 'error');
   quiz.style.display = 'block';
- 
+
 
 }
 
@@ -72,7 +71,7 @@ function yesTwo (){
   q2.style.display = 'none';
   swal('Sorry! You are not eligible!', 'You should be under 75  years old, in order to be eligible.', 'error');
   quiz.style.display = 'block';
-  
+
 }
 
 function noTwo (){
@@ -86,7 +85,7 @@ function yesThree (){
   q3.style.display = 'none';
   swal('Sorry! You are not eligible!', 'Due to the risk of hepatitis, a waiting period of four months is required after recieving a tatto.', 'error');
   quiz.style.display = 'block';
-  
+
 }
 
 function noThree (){
@@ -113,7 +112,7 @@ function yesFive (){
   q5.style.display = 'none';
   swal('Sorry! You are not eligible!', 'The bodies of people with heart conditions need much fluid!', 'error');
   quiz.style.display = 'block';
- 
+
 }
 
 function noFive (){
@@ -127,7 +126,7 @@ function yesSix (){
   q6.style.display = 'none';
   wal('Sorry! You are not eligible!', 'Due to many reasons, people who take drugs are not allowed to donate blood! ', 'error');
   quiz.style.display = 'block';
-  
+
 }
 
 function noSix (){
@@ -152,4 +151,34 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+
+$(document).ready(function() {
+
+  $('.pour') //Pour Me Another Drink, Bartender!
+    .delay(0)
+    .animate({
+      height: '150px'
+    }, 1500)
+    .delay(15600);
+
+  $('.pourTube') //Pour Me Another Drink, Bartender!
+    .delay(0)
+    .animate({
+      height: '150px'
+    }, 0)
+    .delay(15600);
+
+  $('#liquid') // I Said Fill 'Er Up!
+    .delay(1300)
+    .animate({
+      height: '170px'
+    }, 15000);
+
+  $('.beer-foam') // Keep that Foam Rollin' Toward the Top! Yahooo!
+    .delay(3400)
+    .animate({
+      bottom: '200px'
+    }, 2500);
+});
 

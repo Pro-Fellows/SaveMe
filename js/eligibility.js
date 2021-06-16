@@ -153,7 +153,6 @@ for (i = 0; i < coll.length; i++) {
 }
 
 
-
 $(document).ready(function() {
 
   $('.pour') //Pour Me Another Drink, Bartender!
@@ -182,3 +181,4 @@ $(document).ready(function() {
       bottom: '200px'
     }, 2500);
 });
+

@@ -1,0 +1,160 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: consolas;
+} */
+.Header,
+.joinus {
+  font-size: 65px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #144955;
+}
+.team {
+  width: 1200px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team .card {
+  position: relative;
+  cursor: pointer;
+}
+
+.team .card .face {
+  width: 200px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.team .card .face.face1 {
+  position: relative;
+  background: rgb(52, 66, 68);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.team .card:hover .face.face1 {
+  background: #e35046;
+  transform: translateY(70px);
+}
+
+.team .card .face.face1 .content {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.team .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.team .card .face.face1 .content img {
+  max-width: 170px;
+}
+
+/* .team .card .face.face1 .content h3 {
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+  } */
+
+.team .card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 15px rgba(155, 154, 160, 0.8);
+  transform: translateY(-100px);
+}
+
+.team .card:hover .face.face2 {
+  transform: translateY(50px);
+}
+
+.team .card .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #101344;
+  font-weight: 500;
+  text-align: center;
+}
+.team .card .face.face2 .content h2 {
+  margin: 10px;
+  padding: 0;
+  font-size: 24px;
+  color: #101344;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.team .card .face.face2 .content a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.team .card .face.face2 .content a:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* Form */
+
+input[type='text'],
+[type='tel'],
+[type='email'],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type='submit'] {
+  width: 100%;
+  background-color: #e35046;
+  color: white;
+  font-weight: bolder;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: #45a049;
+}
+
+div.formcontainer {
+  text-align: left;
+  border-radius: 5px;
+  background-color: #144955;
+  padding: 20px;
+  margin-bottom: 80px;
+}
+label {
+  color: rgb(255, 255, 255);
+}

@@ -17,9 +17,11 @@ html {
 
 #formH3 {
   color: white;
-  padding-top: 80px;
+  padding-top: 120px;
   margin-top: 0px;
 }
+
+
 
 input[type="text"],
 input[type="number"],
@@ -57,6 +59,14 @@ input[type="submit"]:hover {
   margin:auto;
 }
 
+label{
+  font-size: 20px;
+  color: white;
+}
+
+input{
+  
+}
 
 #slogan {
   text-align: center;
@@ -78,14 +88,30 @@ input[type="submit"]:hover {
   font-size: 70px;
   color: white;
   font-family:'Bebas Neue', serif;
+  animation: moving 1s infinite;
   
 }
 #slogan h1 a {
   text-decoration: none;
   color: white;
+  
 }
+
 #slogan svg {
-  transform: scale(2.5);
+  transform: scale(3);
+}
+
+@keyframes moving {
+  0% {
+    transform:translate(0px,0px);
+  }
+  50%{
+    transform:translate(0px,-20px)
+  }
+  100% {
+    transform:translate(0px,0px)
+  }
+  
 }
 
 

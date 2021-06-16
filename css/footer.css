@@ -47,12 +47,14 @@
    margin-left: 120px;
    
 }
+
 #secondcol a{
   display: block;
   color: white;
   text-decoration:none;
   font-size: 20px;
   margin-top: 15px;
+
 }
 #secondcol a:hover{
   color: #e35046;

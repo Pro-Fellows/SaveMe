@@ -2,30 +2,33 @@
 
 
 header {
-    height: 0px;
+    height: 130px;
+    position: sticky;
+    z-index: 50;
+    top: 0px;
     font-size: 32px;
+    background-color: #E35046;
+    /* box-shadow: 0px 0px 2px #000000; */
 }
 
 header #logo{
-    background-color : #E35046;
-    height: 110px;
-    width: 150px;
+    width: 140px;
+    margin-left: 20px;
+    margin-top: -5px;
 }
 
 header ul{
-    background-color : #E35046;
     list-style-type: none;
-    margin-top: -80px;
-    margin-left: 130px;
+    margin-top: -100px;
+    margin-left: 160px;
 }
 
-header #joinUs{
-    margin-left: 400px;
-}
 
 header li{
     display: inline-block;
 }
+
+
 
 header li a{
    font-family:'Bebas Neue', cursive;
@@ -34,13 +37,10 @@ header li a{
    text-align: center;
    padding: 14px 25px;
    text-decoration: none;
-   margin-left: 30px;
-   padding-top: 10px;
-   padding-bottom: 10px;   
+   margin-left: 15px;
+   transition: font-size 0.2s;   
 }
 
 header li a:hover{
-    color: white ;
-    background-color: #E35046;
-    border-radius: 20px;
+    font-size: 50px;
 }

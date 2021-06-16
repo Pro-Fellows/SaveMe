@@ -14,14 +14,18 @@
 </head>
 
 <body>
+
+  
   <header>
-    <img id="logo" src="img/logo.jpg" alt="" />
+    <img id="logo" src="assets/LOOOOGOOO.png" alt="" />
+
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="pages/donate.html">Donate</a></li>
       <li><a href="pages/request.html">Request Blood</a></li>
       <li><a href="pages/eligibility.html">Eligibility</a></li>
-      <li><a href="pages/aboutUs.html">About Us</a></li>
+      <li><a href="pages/aboutUs.html" id="aboutUs">About Us</a></li>
+
     </ul>
   </header>
 
@@ -34,175 +38,342 @@
           </h1>
         </section>
 
-        <h3>One donation can potentially save up to three lives</h3>
-        <button><a href="#">Donate Now</a></button>
-        <!-- insert link for donation html page here -->
+
+        <button><a href="pages/donate.html">Donate Now</a></button>
       </div>
     </div>
 
     <div id="whyDiv" class="divv">
+
       <h1 class="headline">How Blood Donation Helps</h1>
 
-      <article class="firstArticle">
-        <div class="maincontainer">
-          <div class="back">
-            <h2>How donation helps?</h2>
-            <p>
-              Save lives <br /><br />
-              Boosts the production of <br />
-              red blood cells. <br />
-              <br />
-              Replenishes blood
-            </p>
-          </div>
-          <div class="front">
-            <div class="image">
-              <img src="/img/donate-blood-4997635_1920.jpg" width="302px" height="290px" />
-              <h2></h2>
-            </div>
-          </div>
-        </div>
-        <div class="maincontainer">
-          <div class="back">
-            <h2>How donation helps?</h2>
-            <p>
-              Beneficial of human heart <br />
-              <br />
-              Reduces cancer risk <br /><br />Makes the donor psychologically
-              rejuvenated
-            </p>
-          </div>
-          <div class="front">
-            <div class="image">
-              <img src="/img/blood-donation-4166552_1920.jpg" width="302px" height="290px" />
-              <h2></h2>
-            </div>
-          </div>
-        </div>
-        <div class="maincontainer">
-          <div class="back">
-            <h2>How donation helps?</h2>
-            <p>
-              lower cholesterol level <br />
-              <br />
-              Helps in weight loss <br /><br />
-              Donors automatically warned <br />
-              of serious illness.
-            </p>
-          </div>
-          <div class="front">
-            <div class="image">
-              <img src="/img/blood-donation-3087392_1920.jpg" width="302px" height="290px" />
-              <h2></h2>
-            </div>
-          </div>
-        </div>
-      </article>
     </div>
 
+
     <div class="divv">
-      <h1 class="headline">Gallery</h1>
+
+      <div style="text-align: center">
+
+        <span class="dot" onclick="currentSlide(1)">
+          <img src="assets/blood-donator.png" alt="">
+          <h3>THE DONOR</h3>
+        </span>
+        <span class="dot" onclick="currentSlide(2)">
+          <img src="assets/blood-requestor.png" alt="">
+          <h3>THE Receiver</h3>
+        </span>
+        <span class="dot" onclick="currentSlide(3)">
+          <img src="assets/society.png" alt="">
+          <h3>THE Society</h3>
+        </span>
+        <span class="dot" onclick="currentSlide(4)">
+          <img src="assets/research.png" alt="">
+          <h3>The Researchers</h3>
+        </span>
+
+      </div>
 
       <div class="slideshow-container">
+
         <div class="mySlides fade">
-          <div class="numbertext">1 / 4</div>
-          <img src="img/Blood-Donors.jpg" style="width: 100%" />
-          <div class="text">Happy to get blood</div>
+
+          <h4>PREVENTS HEMOCHROMATOSIS</h4>
+          <p>Hemochromatosis is a health condition that arises due to excess absorption of iron by the body. This may be
+            inherited or may be caused due to alcoholism, anemia or other disorders. Regular blood donation may help in
+            reducing iron overload.</p>
+          <br>
+          <h4>ANTI-CANCER BENEFITS</h4>
+          <p>Blood donation helps in lowering the risk of cancer. By donating blood the iron stores in the body are
+            maintained at healthy levels. A reduction in the iron level in the body is linked with low cancer risk.</p>
+          <br>
+          <h4>MAINTAINS HEALTHY HEART & LIVER</h4>
+          <p>Blood donation is beneficial in reducing the risk of heart and liver ailments caused by the iron overload
+            in the body.</p>
+          <br>
+          <h4>WEIGHT LOSS</h4>
+          <p>Regular blood donation reduces the weight of the donors. This is helpful to those who are obese and are at
+            higher risk of cardiovascular diseases and other health disorders.</p>
+          <br>
+          <h4>STIMULATES BLOOD CELL PRODUCTION</h4>
+          <p>After donating blood, the body works to replenish the blood loss. This stimulates the production of new
+            blood cells and in turn, helps in maintaining good health.</p>
+
         </div>
+
         <div class="mySlides fade">
-          <div class="numbertext">2 / 4</div>
-          <img src="img/Blood-Donor.jpg" style="width: 100%" />
-          <div class="text">Happy to donate blood</div>
+          <h4>Saves lives</h4>
+          <p>Donating blood can be the highest form of humanitarian act. Without blood donation, patients can’t undergo
+            surgeries, recover from illnesses, or just function on a daily basis. You may not be able to help cure
+            someone from life-threatening diseases like cancer, but you can definitely help someone stay alive when you
+            donate blood.</p>
+          <br>
+          <h4>ANTI-CANCER BENEFITS</h4>
+          <p>Blood donation helps in lowering the risk of cancer. By donating blood the iron stores in the body are
+            maintained at healthy levels. A reduction in the iron level in the body is linked with low cancer risk.</p>
+          <br>
         </div>
+
         <div class="mySlides fade">
-          <div class="numbertext">3 / 4</div>
-          <img src="img/teamwork.jpg" style="width: 100%" />
-          <div class="text">Save Me - Team</div>
+          <h4>Stronger Together</h4>
+          <p>We all know that blood is vital for survival but many of us do not know why. Blood contains essential
+            life-saving elements that aid the body in the fight against illnesses and injuries. Blood donors are a
+            critical life-line for millions in the U.S. One thing that all blood donors have in common is a feeling of
+            pride, knowing that the blood they donated will have a profound impact on someone who is in need. It is also
+            important to remember that any one of us may need blood at some point in our lives so, making blood donation
+            an essential duty of our citizenry.</p>
+          <br>
+          <h4>ECONOMIC BENEFITS</h4>
+          <p>Economic rewards do have a positive effect on donations, without negative consequences on the safety of the
+            blood. They cite the work of other researchers, as well as their own extensive work in this area, which
+            examined incentives for actual blood donors in the United States, Argentina, Switzerland, and Italy</p>
+          <br>
         </div>
+
         <div class="mySlides fade">
-          <div class="numbertext">4 / 4</div>
-          <img src="img/Save-A-Life.jpg" style="width: 100%" />
-          <div class="text" style="color: black">Save a life</div>
+          <h4>Fight diseases</h4>
+          <p>Your donor information, blood and blood samples may be used in research to learn more about blood
+            transfusion, human disease, and important public health issues.</p>
+          <br>
+          <h4>Helps researchers</h4>
+          <p>Your donor information, blood and blood samples may be stored and made available for use by researchers
+            indefinitely.</p>
+          <br>
+          <h4>Genetic Researching</h4>
+          <p>Some researchers may examine short pieces of your genes, like your DNA, in some studies on blood and
+            blood
+            samples. It is extremely unlikely that results could be used to identify you or result in discrimination
+            by
+            insurers or employers.</p>
+          <br>
+
         </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
       </div>
-      <br />
-      <div style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+
+
+      <div id="donarsCounter">
+
+        <div>
+          <h2>THE NUMBER</h2>
+          <h3>OF ACTIVE</h3>
+          <h4>DONORS</h4>
+        </div>
+        <div>
+          <h5 id="donorsNumber"></h5>
+        </div>
+
+      </div>
+
+      <div id="howItWorksContainer">
+
+        <h1 class="headline">How it works</h1>
+
+        <div id="howItWorks">
+
+          <div class="work">
+            <h1>THE DONORS</h1>
+            <h2>Head to our donation page</h2>
+            <img class="arrow" src="assets/Arrows/1.png" alt="">
+            <h2>Fill the form with the required details</h2>
+            <img class="arrow" src="assets/Arrows/2.png" alt="">
+            <h2>Feel good about yourself, we will take it from here</h2>
+          </div>
+
+          <div id="dotsVerticle">
+            <img src="assets/dotts-01.png" alt="">
+          </div>
+
+          <div class="work">
+            <h1>THE Requesters</h1>
+            <h2>Head to the requesting page</h2>
+            <img class="arrow" src="assets/Arrows/3.png" alt="">
+            <h2>Fill the form with the required details</h2>
+            <img class="arrow" src="assets/Arrows/4.png" alt="">
+            <h2>Pick a donor and start making your calls</h2>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <div id="didYouKnow">
+        <img src="assets/dividerIllustration.png" alt="" height="500px">
+      </div>
+
+      <div id="videnwhiteSpace">
+        <div class="whiteHorz" id="up"></div>
+        <div class="whiteVert" id="left"></div>
+        <div class="whiteVert" id="right"></div>
+
+        <div id="videoDiv">
+          <video controls id="v" preload="auto" loop src="assets/DonateBlood.mp4" type="video/mp4">DONATE BLOOD
+            NOW</video>
+        </div>
+
+        <div class="whiteHorz" id="bottom"></div>
+
+      </div>
+
+
+      <div id="didYouKnow2">
+        <div>
+
+          <h1>B POSITIVE</h1>
+          <h2>spread the love</h2>
+          <h3>#SaveMe</h3>
+
+        </div>
+      </div>
+
+
+      <div>
+        <h1 class="headline">Inspiring Stories</h1>
+        <div id="storiesContatiner">
+
+          <section class="story">
+            <img src="assets/stories/1.png" alt="">
+            <article>
+              <h2>Dr Brad Hart honoring his mother through blood donations</h2>
+              <p>Brad Hart is a fifth-generation medical professional and comes from a history of medical innovation.
+                His great, great grandfather, Andrew Jackson Hart, was an OBGYN; his great grandfather, Arch Coombs
+                Hart, was a practicing dentist, and one of the first to lecture that tooth decay was caused by bacteria;
+                his grandfather, Frank L. Hart, was a practicing dentist and the first to use plastic instead of rubber
+                in dentures bases (as is the practice today); his father, Ward Hart, was an esteemed internist and
+                volunteered as a clinical professor at Stanford University, School of Medicine; and now, Brad has
+                carried on his family legacy as a dentist in San Carlos... <a target="_blank"
+                  href="https://stanfordbloodcenter.org/hart-to-hart-how-dr-brad-hart-honors-his-mother-through-donation/">Read
+                  More</a></p>
+            </article>
+          </section>
+
+          <section class="story">
+            <article>
+              <h2>Ben & Gail : A giving husband and wife</h2>
+              <p>Last year, donor Ben Brian hit an incredible milestone with SBC: his 500th donation. When asked what
+                motivates him to give blood, among the usual answer of service to others and the free cookies, Ben
+                mentioned that he has been consistently motivated by the dedication of his wife, Gail. Gail is also a
+                milestone donor, having given blood with SBC over 370 times, and Ben reported that the two have often
+                had their own “donation dates” so they could give back together. In honor of Valentine’s Day this year,
+                we wanted to highlight this incredible couple and the countless lives they’ve touched through their
+                service together, both by donating blood and, more recently, supporting children in foster care.Ben and
+                Gail first met in college at Arizona State University (ASU) when their mutual... <a target="_blank"
+                  href="https://stanfordbloodcenter.org/ben-and-gails-story-giving-together/">Read More</a></p>
+            </article>
+            <img src="assets/stories/2.png" alt="">
+          </section>
+
+          <section class="story">
+            <img src="assets/stories/3.png" alt="">
+            <article>
+              <h2>Boyd's story of how donation saved his life TWICE!</h2>
+              <p>Ernest Boyd has been giving blood for decades. What started as a way to save the lives of others,
+                however,
+                has saved his own life multiple times. Becoming a Platelet Donor Ernest first really committed to giving
+                blood in the early 1990s. Though he had donated one or two times in the past, it never really stuck
+                until one day he heard on the news about a truck driver in Oakland who was in a serious accident and in
+                immediate need of blood. He had never met this individual but, as someone who firmly believes in
+                supporting others wherever and however he can, “felt [he] had to go help.” At his donation appointment
+                at the county hospital, he saw a sign imploring individuals to register...<a
+                  href="https://stanfordbloodcenter.org/pulse-ernests-story/">Read More</a></p>
+            </article>
+          </section>
+
+        </div>
+
+
       </div>
     </div>
   </main>
 
-  <div id="partCont" class="divv">
-    <div>
-      <h1 class="headline">Our Partners</h1>
-    </div>
+
+      <div id="partCont" class="divv">
+        <div>
+          <h1 class="headline">Our Partners</h1>
+        </div>
+
+        <div id="partners">
+
+          <span class="column">
+            <a href="https://al-kindihospital.com/"><img
+                src="https://al-kindihospital.com/wp-content/uploads/2020/03/en-logo.png" /></a>
+          </span>
+
+          <span class="column">
+            <a href="http://www.istisharihospital.com/"><img
+                src="http://www.istisharihospital.com/images/theme/logo.png" /></a>
+          </span>
+
+          <span class="column">
+            <a href="https://www.khcc.jo/en/donate-blood"><img
+                src="https://tukuz.com/wp-content/uploads/2020/02/king-hussein-cancer-centre-khcc-logo-vector.png" /></a>
+          </span>
 
 
-    <div id="partners">
-      <span class="column">
-        <a href="http://www.istisharihospital.com/"><img
-            src="http://www.istisharihospital.com/images/theme/logo.png" /></a>
-      </span>
 
-      <span class="column">
-        <a href="https://www.khcc.jo/en/donate-blood"><img src="https://www.khcc.jo/images/logo_en.png" /></a>
-      </span>
+          <span class="column">
+            <a href="http://moh.gov.jo/Pages/viewpage.aspx?pageID=288"><img
+                src="https://www.moh.gov.jo/EchoBusV3.0/SystemAssets/1fddcde0-9adc-438e-8b33-7ebcc65b2eed.png" /></a>
+          </span>
+        </div>
+      </div>
 
-      <span class="column">
-        <a href="http://moh.gov.jo/Pages/viewpage.aspx?pageID=288"><img
-            src="https://www.moh.gov.jo/EchoBusV3.0/SystemAssets/1fddcde0-9adc-438e-8b33-7ebcc65b2eed.png" /></a>
-      </span>
-    </div>
-  </div>
 
+
+
+  </main>
   <footer class="footer">
-    <div id="allcol">
-      <div id="firstcol">
-        <h2>About Us</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis dolorem aspernatur iste maiores mollitia
-          dolor commodi cupiditate praesentium expedita? Incidunt odio quae quod earum, officiis voluptatum consequuntur
-          repellat. Nihil, perferendis!</p>
-      </div>
-      <div id="secondcol">
-        <h2>Links</h2>
-        <ul>
-          <il><a href="pages/aboutUs.html">About us</a></il>
-          <il><a href="#">Privacy Policy</a></il>
-          <il><a href="pages/faq.html">FAQ</a></il>
-        </ul>
-      </div>
-      <div id="thirdcol">
-        <h2>Contacts</h2>
-        <ul>
-          <li>+962 (654) 3621</li>
-          <li>+962 (657) 4664</li>
-          <li>info@saveme.com</li>
-        </ul>
-      </div>
-    </div>
-    <hr>
-    <div id="last">
-      <div id="copy">
-        <p>Copyright &copy; 2021 All Rights Reserved by SaveMe.</p>
-      </div>
-      <div id="icons">
-        <ul class="social-icons"> 
-          <li><img src="assets/facebook.png" alt=""></li>
-          <li><img src="assets/twitter.png" alt=""></li>
-          <li><img src="assets/instagram.png" alt=""></li>
-        </ul>
-      </div>
+    <div class="footerContainer">
+      <div class="row">
+        <div class="footer-col">
+          <img src="assets/LOOOOGOOO.png" alt="" />
+        </div>
 
+        <div class="footer-col">
+          <h4>Save Me</h4>
+          <ul>
+            <li><a href="pages/aboutUs.html">About us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <ul>
+            <li>
+              <a href="#">Facebook</a><img id="fbIcon" src="assets/facebook.png" alt="facebookIcon" />
+            </li>
+            <li>
+              <a href="#">Twitter</a>
+              <img id="twitterIcon" src="assets/twitter.png" alt="twitterIcon" />
+            </li>
+            <li>
+              <a href="#">Instagram</a>
+              <img id="instaIcon" src="assets/instagram.png" alt="instagramIcon" />
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact us</h4>
+          <ul>
+            <li>+962 (654) 3621</li>
+            <li>+962 (657) 4664</li>
+            <li>info@saveme.com</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    
   </footer>
 
   <script src="js/slider.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+  <script src="./js/app.js"></script>
+
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 * {
     
     box-sizing: border-box;
@@ -11,12 +12,11 @@
     width: 100%;
     display: block;
     background-image: url(../assets/hero.jpg);
-    height: 850px;
-    background-position:top;
+    height: 807px;
     background-size:cover;
     background-attachment:fixed;
-    padding-top: 300px;
-    background-blend-mode:screen;
+    box-shadow: 0px 4px 10px #b9b9b9;
+
 
 }
 
@@ -33,7 +33,7 @@
 #slogan section {
     display: inline-block;
     position: relative;
-    margin-top: 180px;
+    margin-top: 400px;
 }
 
 #slogan h3 {
@@ -45,20 +45,23 @@
 }
 
 #slogan button {
-    width: 250px;
-    height: 60px;
-    font-size: 30px;
+    width: 300px;
+    height: 80px;
+    font-size: 50px;
     color: white;
     background-color: #E35046;
-    border-radius: 15px;
     border-style: none;
-    padding:5px;
+    padding:8px;
     font-family:'Bebas Neue', serif;
+    margin-top: 70px;
+    transition: 0.6s ;
     
 }
 
 #slogan button:hover {
     cursor: pointer;
+    background-color: #144955;
+    
 }
 
 #slogan button a {
@@ -81,4 +84,311 @@
 
 #slogan {
     margin-top: 0;
+}
+
+
+#donarsCounter{
+    background-color: #E35046;
+    height: 500px;
+    font-family:'Bebas Neue', serif;
+    color:white ;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#donarsCounter h2{
+    font-size: 100px;
+    margin-bottom: -20px;
+}
+
+#donarsCounter h3{
+    font-size: 130px;
+    margin-bottom: -25px;
+}
+
+#donarsCounter h4{
+    font-size: 160px;
+}
+#donarsCounter h5{
+    font-size: 440px;
+    margin-left: 40px;
+}
+
+
+#howItWorksContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#howItWorks {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    margin-bottom: 300px;
+
+}
+
+
+#howItWorks h1 {
+   font-size: 80px;
+   font-family:'Bebas Neue', serif;
+   color: white;
+   background-color: #E35046;
+   margin-bottom: 90px;
+   padding:30px;
+}
+
+#howItWorks h2{
+    font-size: 50px;
+    margin-top: 50px;
+    font-family:'Bebas Neue', serif;
+    color:#144955 ;
+    box-shadow: 0px 0px 9px #8d8d8d;
+    padding:20px;
+    margin-bottom: 20px;
+
+}
+
+#howItWorks .arrow {
+    
+    width: 200px;
+    opacity:0.7;
+
+}
+
+#dotsVerticle{
+    margin-top: 20px;
+}
+
+#dotsVerticle img {
+    height: 1100px;
+}
+
+#easyDrip{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 300px;
+    margin-bottom: 150px;
+
+}
+
+#easyH1{
+    font-size: 150px;
+    font-family: 'Indie Flower', cursive;  
+    color:#E35046 ;
+    font-weight: bold;
+}
+
+.work {
+    text-align: center;
+    width : 600px;
+}
+
+
+#dotss{
+    text-align: center;
+    margin-top: -180px;
+    width: 500px;
+}
+
+#didYouKnow{
+    height: 500px;
+    margin-top: -50px;
+    margin-bottom: 40px;
+    box-shadow: 0px 1px 10px #b9b9b9;
+}
+
+#didYouKnow2{
+    height: 500px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    background-image: url("../assets/shareUs.png");
+    background-clip: border-box;
+    /* background-size: cover;
+    background: no-repeat; */
+}
+
+#didYouKnow2 div{
+
+    padding-top: 100px;
+    padding-left: 41%;
+
+}
+
+#didYouKnow2 h1{
+
+    font-size: 102px;
+    color: white;
+    font-family:'Bebas Neue', serif;
+
+}
+#didYouKnow2 h2{
+
+    font-size: 62px;
+    color: white;
+    font-family:'Bebas Neue', serif;
+    margin-top: -18px;
+
+}
+#didYouKnow2 h3{
+
+    font-size: 118px;
+    color: white;
+    font-family:'Bebas Neue', serif;
+    margin-top: -12px;
+
+}
+
+
+#partners {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#partners img{
+    filter: grayscale();
+    height: 150px;
+    transition: 0.6s;
+}
+
+#partners img:hover{
+
+    transform: scale(1.2);
+    filter: none;
+}
+
+#partCont {
+    width: 100%;
+    height: 400px;
+    margin-top: 120px;
+  }
+
+#drippy{
+    width: 300px;
+}
+
+.story{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 60%;
+    margin:auto;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 10px #b9b9b9;
+    
+
+
+}
+
+.story img{
+
+    width:400px;
+    height: 400px;
+    margin-top: 50px;
+    
+
+}
+
+.story article{
+
+    
+    height: 500px;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+
+}
+
+.story article h2{
+
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    width: 500px;
+    text-align: justify;
+    font-family:'Bebas Neue', serif;
+    color: #E35046;
+    
+    
+
+}
+
+.story article p{
+
+    font-size: 20px;
+    line-height:23px;
+    width: 500px;
+    text-align: justify;
+    font-family: 'Roboto', cursive;
+    font-weight: bold;
+
+}
+
+.story article p a{
+
+    text-decoration:none;
+    color: #144955;
+
+}
+
+
+
+#videoDiv{
+        
+    text-align:center;
+    
+}
+#v{
+    margin-top: 100px;
+    height: 600px;
+    stroke: white 3px;
+    border: none;
+}
+
+
+.whiteVert{
+    display: inline-block;
+    height: 700px;
+    width: 10px;
+    position: absolute;
+    background-color: white;
+    top: 70px;
+    left: 410px;
+}
+
+.whiteHorz{
+    display: inline-block;
+    position: absolute;
+    width: 1200px;
+    height: 10px;
+    background-color: white;
+    left: 380px;
+}
+
+#up {
+    top:100px;
+}
+#bottom{
+    bottom: 3px;
+}
+#right{
+    left:1480px ;
+}
+
+#videnwhiteSpace {
+    position: relative;
 }

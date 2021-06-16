@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
 .mySlides {
   display: none;
+  width: 100%;
+  height: auto;
+  margin-bottom: 150px;
 }
 .slideshow-container img {
   vertical-align: middle;
@@ -11,27 +19,8 @@
   position: relative;
   margin: auto;
 }
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: rgb(214, 20, 20);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
@@ -47,58 +36,69 @@
   width: 100%;
   text-align: center;
 }
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #131c3a;
-  font-weight: bold;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+
+
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #ffd2d2;
-  border-radius: 50%;
+  height: 240px;
+  width: 260px;
+  margin:24.5px ;
+  background-color: #E35046;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 .active,
 .dot:hover {
-  background-color: #111111;
+  background-color: #144955;
 }
+
+
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
+
 @keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0;
   }
   to {
     opacity: 1;
   }
 }
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
-  }
+
+
+.dot img {
+
+  width: 150px;
+  margin: 20px;
+  filter: invert() opacity(70%);
+}
+
+.dot h3 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 40px;
+  font-family:'Bebas Neue', cursive;
+
+  
+}
+
+
+.mySlides h4 {
+  font-size: 55px;
+  letter-spacing: 1px;
+  font-family:'Bebas Neue', cursive;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  color: #144955;
+
+}
+
+.mySlides p {
+  font-size: 30px;
+  font-family: 'Roboto', cursive;
+  text-align: justify;
 }

@@ -6,9 +6,6 @@
   float: left; /* stack each div horizontally */
 }
 
-img {
-  border-radius: 20px;
-}
 
 .back h2 {
   position: absolute;

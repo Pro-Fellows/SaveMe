@@ -4,7 +4,67 @@
     box-sizing: border-box;
   }
 
+
+  #slogan {
+    text-align: center;
+    width: 100%;
+    display: block;
+    background-image: url(../assets/hero.jpg);
+    height: 807px;
+    background-position:top;
+    background-size:cover;
+    /* transform: translate(10px,-20px); */
+    background-attachment:fixed;
+    padding-top: 700px;
+    background-blend-mode:screen;
   
+  }
+  
+  #slogan h1 {
+  
+    font-size: 70px;
+    color: white;
+    font-family:'Bebas Neue', serif;
+    animation: moving 1s infinite;
+    
+  }
+  #slogan h1 a {
+    text-decoration: none;
+    color: white;
+    
+  }
+  
+  #slogan svg {
+    transform: scale(3);
+  }
+  
+  @keyframes moving {
+    0% {
+      transform:translate(0px,0px);
+    }
+    50%{
+      transform:translate(0px,-20px)
+    }
+    100% {
+      transform:translate(0px,0px)
+    }
+    
+  }
+  
+  
+  #slogan section {
+    display: inline-block;
+    position: relative;
+    margin-top: 180px;
+  }
+  
+  .seperator{
+    height: 100px;
+    background-color:#144955 ;
+  }
+
+
+
 
 #requestDiv{
     text-align: center;

@@ -8,21 +8,25 @@ body {
 .box {
   width: 750px;
   margin: 100px auto;
-  background: #144955;
+  background: none
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .box .heading {
-  background: #e35046;
+  background: #144955;
   padding: 10px;
   color: #fff;
   text-align: center;
   font-family: 'Rubik';
+  margin-left: -145px;
+  margin-top: 200px;
   font-size: 24px;
+  width: 1140px;
 }
 
 .faqs {
   padding: 5px 20px 20px;
+  margin-bottom: 150px;
 }
 
 ::-webkit-details-marker {
@@ -96,4 +100,20 @@ details summary {
   font-size: 20px;
   font-weight: 600;
   margin-left: 20px;
+
+}
+
+#column1 {
+  position: absolute;
+  display: inline-block;
+  left: 60%;
+}
+#column2 {
+  display: inline-block;
+  width: 80%;
+  margin-left: -183px;
+}
+.text{
+  font-size: 16px;
+
 }

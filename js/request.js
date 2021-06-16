@@ -108,19 +108,19 @@ function renderCards(array) {
     divEl.setAttribute('class', 'card');
     cardsCont.appendChild(divEl);
 
-    let h1El = document.createElement('h1');
+    let h1El = document.createElement('h2');
     divEl.appendChild(h1El);
     h1El.textContent = `The donar name is: ${array[i].name}`;
 
-    let h2El = document.createElement('h2');
+    let h2El = document.createElement('h3');
     divEl.appendChild(h2El);
     h2El.textContent = `The blood type is: ${array[i].bloodType}`;
 
-    h2El = document.createElement('h2');
+    h2El = document.createElement('h3');
     divEl.appendChild(h2El);
     h2El.textContent = `The donar lives in: ${array[i].city}`;
 
-    h2El = document.createElement('h2');
+    h2El = document.createElement('h3');
     divEl.appendChild(h2El);
     h2El.textContent = `The phone number is: ${array[i].phone}`;
 

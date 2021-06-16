@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Enquiries</title>
+</head>
+
+<body>
+    <main>
+        <div class="EnquiryIntro">
+            <h2>Submit an enquiry to our support team.</h2>
+            <p>Our dedicated staff will respond within 48 hours.
+                <br> 
+                Tips: Include as many details as possible</p>
+        </div>
+
+        <div>
+
+            <form id="EnquiryForm">
+                <fieldset>
+
+                    <label for="EnquiryField">Enquiry Type</label>
+                    <select name="enquiry" id="EnquiryField" required>
+                        <option value="none">Select</option>
+                        <option value="complaint">I have complaint</option>
+                        <option value="generalquestion">I have a general question</option>
+                        <option value="questioneligibility">I have a general question about my eligibility</option>
+                        <option value="suggestion">I have a suggestion</option>
+                    </select>
+                    <br>
+
+                    <label for="subjectField">Subject</label>
+                    <input type="text" id="subjectField">
+                    <br>
+
+                    <label for="EnquiryCaseField">Enquiry</label>
+                    <textarea name="" id="EnquiryCaseField" cols="40" rows="10" required></textarea>
+                    <input type="text" id="subjectField">
+                    <br>
+
+                    <label for="FirstnameField">First Name</label>
+                    <input type="text" id="FirstnameField" placeholder="Enter Your First Name" required>
+                    <br>
+
+                    <label for="LastnameField">Last Name</label>
+                    <input type="text" id="LastnameField" placeholder="Enter Your Last Name" required>
+                    <br>
+
+                    <label for="EmailField">Email Address</label>
+                    <input type="email" id="EmailField" placeholder="example@address.com" required>
+                    <br>
+
+                    <label for="MobileNumberField">Mobile Number</label>
+                    <input type="tel" id="MobileNumberField" placeholder="+962 (000) (0000)" required>
+                    <br>
+
+
+
+                    <input type="submit" value="Submit Your Enquiry">
+
+                </fieldset>
+            </form>
+
+
+        </div>
+
+
+    </main>
+    
+</body>
+</html>

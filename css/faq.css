@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 
+
 body {
   background: #f6f6f6;
 }
@@ -99,6 +100,7 @@ details summary {
   font-size: 20px;
   font-weight: 600;
   margin-left: 20px;
+
 }
 
 #column1 {
@@ -113,4 +115,5 @@ details summary {
 }
 .text{
   font-size: 16px;
+
 }

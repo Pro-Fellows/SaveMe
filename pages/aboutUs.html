@@ -8,29 +8,41 @@
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/newaboutUs.css" />
     <link rel="stylesheet" href="../css/team.css" />
-
   </head>
   <body>
-    <!-- <header>
-      <img id="logo" src="../img/logo.jpg" alt="" />
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="/pages/donate.html">Donate</a></li>
-        <li><a href="/pages/request.html">Request Blood</a></li>
-        <li><a href="/pages/eligibility.html">Eligibility</a></li>
-        <li><a href="/pages/aboutUs.html">About Us</a></li>
+    <header id="header">
+      <img id="logo" src="../assets/LOOOOGOOO.png" alt="" />
+  
+      <ul id="nav">
+        <div id="title">
+          <li><a class="navi" href="../index.html">Home</a></li>
+          <li><a class="navi" href="../pages/donate.html">Donate</a></li>
+          <li><a class="navi" href="../pages/request.html">Request Blood</a></li>
+          <li><a class="navi" href="../pages/eligibility.html">Eligibility</a></li>
+        </div>
+        <div id="about">
+          <li><a class="navi" href="../pages/aboutUs.html" id="aboutUs">About Us</a></li>
+        </div>
       </ul>
-    </header> -->
+    </header>
+  <main>
+    <div id="slogan" class="divv">
+      <div>
+        <section>
+          <h1>
+            GIVE BLOOD<span id="heartBeat"><img src="assets/beat.png" alt="" width="300px" /></span> SAVE LIFE
+          </h1>
+        </section>
+        <button><a href="pages/donate.html">Donate Now</a></button>
+      </div>
+    </div>
     <main>
       <section id="controlPage">
-
         <!-- <div>
         <img id="topImage" src="../assets/happy cartoon donors.jpg" alt="">
       </div> -->
-
         <div id="ourMission">
           <div id="line"><h1 class="content">Our Mission</h1></div>
-
           <p class="content">
             We are a team of volunteers that aims to help people in need of
             blood and save their lives by providing the blood type <br />
@@ -38,10 +50,8 @@
             donors on our website.
           </p>
         </div>
-
         <div id="ourVision">
           <div id="line"><h1 class="content">Our Vision</h1></div>
-
           <p class="content">
             We aim to make the process of blood donation easy and available
             anytime and anywhere in Jordan. In addition to spread <br />
@@ -152,7 +162,6 @@
         <div class="joinus">
           <h2>Join our Team</h2>
           <br />
-
         </div>
         <div class="formcontainer">
           <form action="/action_page.php">
@@ -164,7 +173,6 @@
               required
               placeholder="Your name.."
             />
-
             <label for="lname">Last Name</label>
             <input
               type="text"
@@ -173,7 +181,6 @@
               required
               placeholder="Your last name.."
             />
-
             <label for="age">Age</label>
             <input
               type="text"
@@ -182,14 +189,12 @@
               placeholder="Your Age.."
               required
             />
-
             <label for="gender">Gender</label>
             <select id="gender" name="gender" required>
               <option value="none">Select</option>
               <option value="male">Male</option>
               <option value="female">Female</option>
             </select>
-
             <label for="country">City</label>
             <select id="country" name="country">
               <option value="Amman">Amman</option>
@@ -221,68 +226,51 @@
               required
             />
             <br />
-
             <input type="submit" value="Submit" />
           </form>
         </div>
       </section>
-
     </main>
-
     <footer class="footer">
-      <div class="footerContainer">
-        <div class="row">
-          <div class="footer-col">
-            <img src="../assets/logo2.png" alt="" />
-          </div>
-
-          <div class="footer-col">
-            <h4>Save Me</h4>
-            <ul>
-              <li><a href="/pages/aboutUs.html">About Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Follow us</h4>
-            <ul>
-              <li>
-                <a href="#">Facebook</a
-                ><img
-                  id="fbIcon"
-                  src="../assets/facebook.png"
-                  alt="facebookIcon"
-                />
-              </li>
-              <li>
-                <a href="#">Twitter</a>
-                <img
-                  id="twitterIcon"
-                  src="../assets/twitter.png"
-                  alt="twitterIcon"
-                />
-              </li>
-              <li>
-                <a href="#">Instagram</a>
-                <img
-                  id="instaIcon"
-                  src="../assets/instagram.png"
-                  alt="instagramIcon"
-                />
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Contact us</h4>
-            <ul>
-              <li>+962 (654) 3621</li>
-              <li>+962 (657) 4664</li>
-              <li>info@saveme.com</li>
-            </ul>
-          </div>
+      <div id="allcol">
+        <div id="firstcol">
+          <h2>About Us</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis dolorem aspernatur iste maiores mollitia
+            dolor commodi cupiditate praesentium expedita? Incidunt odio quae quod earum, officiis voluptatum consequuntur
+            repellat. Nihil, perferendis!</p>
+        </div>
+        <div id="secondcol">
+          <h2>Links</h2>
+          <ul>
+            <il><a href="../pages/aboutUs.html">About us</a></il>
+            <il><a href="#">Privacy Policy</a></il>
+            <il><a href="../pages/faq.html">FAQ</a></il>
+          </ul>
+        </div>
+        <div id="thirdcol">
+          <h2>Contacts</h2>
+          <ul>
+            <li>+962 (654) 3621</li>
+            <li>+962 (657) 4664</li>
+            <li>info@saveme.com</li>
+          </ul>
         </div>
       </div>
+      <hr>
+      <div id="last">
+        <div id="copy">
+          <p>Copyright &copy; 2021 All Rights Reserved by SaveMe.</p>
+        </div>
+        <div id="icons">
+          <ul class="social-icons"> 
+            <li><img src="../assets/facebook.png" alt=""></li>
+            <li><img src="../assets/twitter.png" alt=""></li>
+            <li><img src="../assets/instagram.png" alt=""></li>
+          </ul>
+        </div>
+  
+      </div>
+      
     </footer>
   </body>
 </html>

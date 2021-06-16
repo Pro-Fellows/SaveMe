@@ -53,17 +53,17 @@ html {
 div textarea {
   width: 400px;
   height: 150px;
-  margin-left: 0px;
+  margin-left: 0%;
 }
 
 li > ol,
 li > ul {
-  margin-bottom: 0;
+  margin-bottom: 0%;
 }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
+  border-spacing: 0%;
 }
 
 fieldset {
@@ -121,13 +121,12 @@ h6 {
   font-size: 13px;
 }
 .bg-blue {
-  box-shadow: 5px 10px 15px #b9b9b9;
-  margin-left: 350px;
-  margin-right: 350px;
+  margin-left: 26.5%;
+  margin-right: 26.5%;
 }
 
 .p-t-20 {
-  padding-top: 20px;
+  padding-top: 1.95%;
 }
 
 .wrapper {
@@ -140,7 +139,7 @@ h6 {
 .btn {
   line-height: 40px;
   display: inline-block;
-  padding: 0 25px;
+  padding: 0 15%;
   cursor: pointer;
   font-family: 'Roboto', 'Arial', 'Helvetica Neue', sans-serif;
   color: #fff;
@@ -181,7 +180,7 @@ input {
 
 .input-group {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 8%;
   border-bottom: 2px solid #ccc;
 }
 
@@ -189,7 +188,7 @@ input {
   position: absolute;
   font-size: 18px;
   color: #ccc;
-  right: 8px;
+  right: 1%;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -200,12 +199,12 @@ input {
 }
 
 .input--style-1 {
-  padding: 9px 0;
+  padding: 2% 0;
   color: #666;
 }
 
 .title {
-  margin-bottom: 37px;
+  margin-bottom: 7%;
 }
 .card {
   overflow: hidden;
@@ -224,8 +223,8 @@ input {
 .card-1 .card-heading {
   background: url('../img/pngtree-geometric-gradient-blood-donation-charity-event-poster-background-material-image_138292.jpg')
     center center/cover no-repeat;
-  padding-top: 210px;
-  padding-left: 350px;
+  padding-top: 27.38%;
+  padding-left: 45%;
 }
 
 .card-1 .card-body {
@@ -236,46 +235,44 @@ input {
 
 @media (max-width: 767px) {
   .card-1 .card-body {
-    padding: 0 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 0 5.22%;
+    padding-top: 5.22%;
+    padding-bottom: 5.22%;
   }
 }
 
 #showQuestions {
   width: 610px;
-  margin: 100px 350px;
+  margin: 13.04% auto;
   background: #144955;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
-  padding: 5px 20px 20px;
+  padding: 0.5% 3% 3%;
 }
-#showQuestions h2,
-p {
+#showQuestions h2{
   color: black;
   background: #f6f6f6;
-  padding: 10px 20px;
+  padding: 2% 4%;
   margin-top: 30px;
   font-family: 'Rubik';
   font-size: 22px;
   font-weight: 600;
 }
 #showQuestions p {
-  color: #e35046;
-  margin-top: 0px;
-  font-size: 16px;
+  color: white;
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: justify;
 }
 #Hi {
-  margin-left: 3px;
+  margin-left: 0.5%;
 }
 
 #EnquiryField {
-  margin-left: 0px;
+  margin: auto;
 }
 #EnquiryForm {
-  margin-left: -20px;
-  margin-right: 40px;
+  margin-left: 0%;
+  margin-right: 1.8%;
   /* margin-left: 30px;
   margin-right: 50px; */
-}
-.card-body {
 }

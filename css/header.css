@@ -1,46 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
-header {
+#header {
     height: 130px;
     position: sticky;
+    top: 0;
     z-index: 50;
-    top: 0px;
     font-size: 32px;
-    background-color: #E35046;
-    /* box-shadow: 0px 0px 2px #000000; */
+    background-color: whitesmoke;
 }
 
-header #logo{
+#header #logo{
     width: 140px;
-    margin-left: 20px;
+    margin-left: 1.5%;
     margin-top: -5px;
 }
 
-header ul{
+#header ul{
     list-style-type: none;
-    margin-top: -100px;
-    margin-left: 160px;
+    margin-top: -95px;
+    margin-left: 12%;
 }
 
 
-header li{
+#header li{
     display: inline-block;
 }
-
-
-
-header li a{
+#header ul #title{
+    float: left;
+    
+}
+#header ul #about{
+    float: right;
+    margin-right: 5%;
+}
+#header #title li a{
    font-family:'Bebas Neue', cursive;
-   color: white;
+   color: #E35046;
    font-size: 40px;
    text-align: center;
    padding: 14px 25px;
    text-decoration: none;
-   margin-left: 15px;
-   transition: font-size 0.2s;   
+   transition: font-size 0.2s; 
 }
 
-header li a:hover{
+#header #title li a:hover{
     font-size: 50px;
 }
+
+#header #about li a{
+    font-family:'Bebas Neue', cursive;
+    color: #E35046;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    transition: font-size 0.2s;
+      
+ }
+ 
+#header #about li a:hover{
+     font-size: 50px;
+ }
+
+ main{
+     clear: both;
+ }

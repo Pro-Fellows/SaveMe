@@ -1,5 +1,14 @@
-#form {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+#formID {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+#formSection{
+  background-color: #E35046;
 }
 
 * {
@@ -7,14 +16,9 @@
 }
 
 #formH3 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-  font-style: inherit;
-  font-stretch: ultra-expanded;
-  font-size: 28px;
-  color: #b91010;
-  text-align: center;
+  color: white;
+  padding-top: 80px;
+  margin-top: 0px;
 }
 
 input[type="text"],
@@ -34,7 +38,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #04aa6d;
+  background-color: #144955;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -43,14 +47,14 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #b91010;
+  color: #144955;
+  background-color: white;
 }
 
 .form-container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 20px;
-  width: 100%;
+  width: 40%;
+  margin:auto;
 }
 
 
@@ -59,12 +63,12 @@ input[type="submit"]:hover {
   width: 100%;
   display: block;
   background-image: url(../assets/hero.jpg);
-  height: 850px;
+  height: 807px;
   background-position:top;
   background-size:cover;
   /* transform: translate(10px,-20px); */
   background-attachment:fixed;
-  padding-top: 300px;
+  padding-top: 700px;
   background-blend-mode:screen;
 
 }
@@ -75,7 +79,13 @@ input[type="submit"]:hover {
   color: white;
   font-family:'Bebas Neue', serif;
   
-
+}
+#slogan h1 a {
+  text-decoration: none;
+  color: white;
+}
+#slogan svg {
+  transform: scale(2.5);
 }
 
 
@@ -130,4 +140,13 @@ input[type="submit"]:hover {
 
 #slogan {
   margin-top: 0;
+}
+
+#betterDonation{
+  width: 100%;
+}
+
+.seperator{
+  height: 100px;
+  background-color:#144955 ;
 }

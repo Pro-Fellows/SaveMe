@@ -53,6 +53,7 @@ html {
 div textarea {
   width: 400px;
   height: 150px;
+  margin-left: 0px;
 }
 
 li > ol,
@@ -120,19 +121,15 @@ h6 {
   font-size: 13px;
 }
 .bg-blue {
-  background: rgb(227, 80, 70);
-}
-.p-t-100 {
-  padding-top: 100px;
+  box-shadow: 5px 10px 15px #b9b9b9;
+  margin-left: 350px;
+  margin-right: 350px;
 }
 
 .p-t-20 {
   padding-top: 20px;
 }
 
-.p-b-100 {
-  padding-bottom: 100px;
-}
 .wrapper {
   margin: 0 auto;
 }
@@ -163,6 +160,7 @@ h6 {
 
 .btn--green {
   background: rgb(20, 73, 85);
+  margin: auto;
 }
 
 .btn--green:hover {
@@ -224,8 +222,10 @@ input {
 }
 
 .card-1 .card-heading {
-  background: url('../img/enquiry\ form.jpg') center center/cover no-repeat;
+  background: url('../img/pngtree-geometric-gradient-blood-donation-charity-event-poster-background-material-image_138292.jpg')
+    center center/cover no-repeat;
   padding-top: 210px;
+  padding-left: 350px;
 }
 
 .card-1 .card-body {
@@ -243,8 +243,8 @@ input {
 }
 
 #showQuestions {
-  width: 750px;
-  margin: 100px auto;
+  width: 610px;
+  margin: 100px 350px;
   background: #144955;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
   padding: 5px 20px 20px;
@@ -263,4 +263,19 @@ p {
   color: #e35046;
   margin-top: 0px;
   font-size: 16px;
+}
+#Hi {
+  margin-left: 3px;
+}
+
+#EnquiryField {
+  margin-left: 0px;
+}
+#EnquiryForm {
+  margin-left: -20px;
+  margin-right: 40px;
+  /* margin-left: 30px;
+  margin-right: 50px; */
+}
+.card-body {
 }

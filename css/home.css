@@ -217,21 +217,21 @@
 
 #didYouKnow2 div{
 
-    padding-top: 100px;
-    padding-left: 41%;
+    text-align: center;
+    padding-top: 70px;
 
 }
 
 #didYouKnow2 h1{
 
-    font-size: 102px;
+    font-size: 150px;
     color: white;
     font-family:'Bebas Neue', serif;
 
 }
 #didYouKnow2 h2{
 
-    font-size: 62px;
+    font-size: 90px;
     color: white;
     font-family:'Bebas Neue', serif;
     margin-top: -18px;
@@ -239,7 +239,7 @@
 }
 #didYouKnow2 h3{
 
-    font-size: 118px;
+    font-size: 170px;
     color: white;
     font-family:'Bebas Neue', serif;
     margin-top: -12px;
